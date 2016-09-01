@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
    var responsible = document.querySelector(".responsible");
   var disciplined = document.querySelector(".disciplined");
   var myPhoto = document.querySelector(".myFace");
+  var myPhotoMb = document.querySelector(".myFaceMobile");
   var questionOne = document.querySelector(".one");
   var questionTwo = document.querySelector(".two");
   var questionThree = document.querySelector(".three");
@@ -86,6 +87,37 @@ document.addEventListener("DOMContentLoaded", function() {
    myPhoto.setAttribute("src", "img/me7.jpg"); 
   }
   questionSix.addEventListener("click", changeImg6);
+  
+  /*----Mobile version----*/
+  function changeImgMb1 () {
+   myPhotoMb.setAttribute("src", "img/meRes2.jpg"); 
+  }
+  questionOne.addEventListener("click", changeImgMb1);
+  
+  function changeImgMb2 () {
+   myPhotoMb.setAttribute("src", "img/meRes3.jpg"); 
+  }
+  questionTwo.addEventListener("click", changeImgMb2);
+  
+  function changeImgMb3 () {
+   myPhotoMb.setAttribute("src", "img/meRes4.jpg"); 
+  }
+  questionThree.addEventListener("click", changeImgMb3);
+  
+  function changeImgMb4 () {
+   myPhotoMb.setAttribute("src", "img/meRes5.jpg"); 
+  }
+  questionFour.addEventListener("click", changeImgMb4);
+  
+  function changeImgMb5 () {
+   myPhotoMb.setAttribute("src", "img/meRes6.jpg"); 
+  }
+  questionFive.addEventListener("click", changeImgMb5);
+  
+  function changeImgMb6 () {
+   myPhotoMb.setAttribute("src", "img/meRes7.jpg"); 
+  }
+  questionSix.addEventListener("click", changeImgMb6);
   
   
   
