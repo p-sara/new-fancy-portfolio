@@ -32,22 +32,42 @@
     </div>
   </header>
   <nav class="navigation">
-    <a href="#">Moja historia</a>
-    <a href="#">O mnie</a>
-    <a href="#">Umiejętności</a>
-    <a class="works" href="#">Moje prace</a>
-    <a href="#">Kontakt</a>
+    <a href="#myStory">Moja historia</a>
+    <a href="#aboutMe">O mnie</a>
+    <a href="#mySkills">Umiejętności</a>
+    <a class="works" href="#myWorks">Moje prace</a>
+    <a href="#contact">Kontakt</a>
   </nav>
-  <section id="aboutMe"></section>
-  <section id="myStory"></section>
-  <section id="my_skills">
+  <section id="myStory">
+    <h2>Moja historia</h2>
+   <div class="slider-wrapper">
+      <div class="znak1"></div>
+     <div class="img">
+      <ul class="slider">
+        <li class="visible">
+        <div class="uni"></div><p>Moja historia zaczęła się dawno temu na Uniwersytecie Wrocławskim, gdzie studiowałam filologię rosyjską. Szczerze zakochałam się w języku, literaturze i kulturze tego kraju, a uczelnia umożliwiła mi także studia za granicą, w Rosji i Francji, które były niesamowitym doświadczeniem.</p></li>
+        <li><div class="dailyArt"></div><p>Z czasem jednak okazało się, że sama biegła znajomość języka rosyjskiego to za mało. Zaczęłam szukać czegoś z czym mogłabym ją połączyć. W sukurs przyszła mi Zuzanna Stańska i jej aplikacja DailyArt. Stwierdziłam, że chciałabym robić w życiu coś równie ciekawego i kreatywnego.</p></li>
+        <li><div class="djangoGirls"></div><p>Aby przekonać się czy programowanie jest rzeczywiście czymś, czego przy odpowiednim nakładzie pracy i konsekwencji mogę się nauczyć, pojechałam do Walencji na warsztaty organizowane przez DjangoGirls.</p></li>
+        <li><img src="img/slide4.jpg" /></li>
+        <li><div class="codersLab"></div><p>Test wypadł pozytywnie! Zainwestowałam więc w 6-tygodniowy bootcamp "Zostań programistą Front-End" firmy Coder's Lab, dzięki któremu powoli zaczynałam nabierać pojęcia co z czym się je i jeszcze bardziej się angażować!</p></li>
+      </ul>
+    </div>
+     <div class="znak znak2"></div>
+    </div>
+  </section>
+  <section id="aboutMe">
+  <h2>O mnie</h2>
+    <p>I oto jestem. Żółtodziób i świeżynka. Ale mam chęci do nauki, zapał i motywacje potrzebne do rozwoju i doskonalenia się. Moim celem jest zostanie nie tylko programistą, ale także web designerem. Samodzielnie, korzystając z książek, kursów online i materiałów w internecie uczę się jak projektować przyjazne dla użytkownika, a zarazem eleganckie strony internetowe. Mam nadzieję być specjalistą, który potrafi napisać kod szablonu, który stworzył. I liczę na to, że dzięki uporowi, w niedługim czasię mi się to uda! </p>
+  </section>
+  <section id="mySkills">
+    <div class="wrap-it">
     <header class="section-header">
-      <h2><span>My</span> skills</h2>
+      <h2>Co portafię</h2>
     </header>
     <div class="skill-wrapper">
       <div id="container">
         <h4>HTML 5</h4>
-        <div id="bar-1" class="bar-main-container colorOne">
+        <div id="bar-1" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=51>50%</div>
             <div class="bar-container">
@@ -69,7 +89,7 @@
       </div>
       <div id="container">
         <h4>Sass</h4>
-        <div id="bar-3" class="bar-main-container colorThree">
+        <div id="bar-3" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=51>50%</div>
             <div class="bar-container">
@@ -80,7 +100,7 @@
       </div>
       <div id="container">
         <h4>JavaScript</h4>
-        <div id="bar-4" class="bar-main-container colorOne">
+        <div id="bar-4" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=26>25%</div>
             <div class="bar-container">
@@ -102,7 +122,7 @@
       </div>
       <div id="container">
         <h4>Responsive Web Design</h4>
-        <div id="bar-6" class="bar-main-container colorThree">
+        <div id="bar-6" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=51>50%</div>
             <div class="bar-container">
@@ -113,7 +133,7 @@
       </div>
       <div id="container">
         <h4>Git (github) </h4>
-        <div id="bar-7" class="bar-main-container colorOne">
+        <div id="bar-7" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=31>30%</div>
             <div class="bar-container">
@@ -123,7 +143,7 @@
         </div>
       </div>
       <div id="container">
-        <h4>Indesign</h4>
+        <h4>Photoshop</h4>
         <div id="bar-8" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=31>30%</div>
@@ -135,7 +155,7 @@
       </div>
       <div id="container">
         <h4>Język angielski</h4>
-        <div id="bar-9" class="bar-main-container colorThree">
+        <div id="bar-9" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=91>90%</div>
             <div class="bar-container">
@@ -146,7 +166,7 @@
       </div>
       <div id="container">
         <h4>Język rosyjski</h4>
-        <div id="bar-10" class="bar-main-container colorOne">
+        <div id="bar-10" class="bar-main-container colorTwo">
           <div class="wrap">
             <div class="bar-percentage" data-percentage=91>90%</div>
             <div class="bar-container">
@@ -156,9 +176,22 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
-  <section id="myWorks"></section>
-  <section id="contact"></section>
+  <section id="myWorks">
+  <h2>Moje prace</h2>
+  </section>
+  <section id="contact">
+  <h2>Kontakt</h2>
+  <form>
+    <h4>Napisz do mnie</h4>
+      <input class="name" name="name" placeholder="Imię">
+      <input class="email" name="email" type="email" placeholder="E-mail">
+      <textarea class="message" name="message" placeholder="Twoja wiadomość"></textarea>
+    </form>
+    <div class="icons">
+    </div>
+  </section>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <script src="js/app.js" type="text/javascript"></script>
 </body>

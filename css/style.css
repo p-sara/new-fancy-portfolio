@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "appleberry";
+  src: url("appleberry.eot?") format("eot"), url("appleberry.woff") format("woff"), url("appleberry.ttf") format("truetype"), url("appleberry.svg#appleberry") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -427,6 +432,13 @@ textarea {
 body {
   font-family: 'Roboto', sans-serif; }
 
+h2 {
+  font-size: 55px;
+  font-family: 'appleberry';
+  font-weight: 100;
+  text-align: center;
+  padding-top: 70px; }
+
 header {
   margin: 0; }
 
@@ -463,9 +475,9 @@ h3 {
   height: 20%; }
 
 .questionMark {
-  height: 14%;
-  width: 3.7%;
-  background-image: url("../img/znakzapytania.png");
+  height: 10%;
+  width: 1.7%;
+  background-image: url("../img/qu4.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -678,13 +690,13 @@ h3 {
     height: 15%; }
 
   .creative {
-    top: 17%;
-    left: 56%;
+    top: 20%;
+    left: 50%;
     width: 26%; }
 
   .motivated {
     top: 31%;
-    left: 63%;
+    left: 68%;
     width: 28%; }
 
   .consistant {
@@ -730,8 +742,70 @@ h3 {
     align-self: center;
     color: #000; }
 
+/*----------Slider----------*/
+#myStory {
+  background-color: #fff;
+  padding: 100px 0;
+  color: #ffdf3c;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700; }
+  #myStory h2 {
+    color: black; }
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+#myStory .slider-wrapper .znak1 {
+  height: 64px;
+  width: 64px;
+  background-image: url("../img/arrow1.png"); }
+
+#myStory .slider-wrapper .znak2 {
+  height: 64px;
+  width: 64px;
+  background-image: url("../img/arrow2.png");
+  float: right; }
+
+.slider {
+  height: 500px;
+  width: 601px;
+  padding: 100px 0;
+  margin: 0; }
+
+.slider li:not(.visible) {
+  display: none; }
+
+.visible {
+  display: block; }
+
+.uni {
+  background-image: url("../img/uwr.png");
+  background-position: center;
+  background-size: cover;
+  height: 100px;
+  width: 315px;
+  margin: 0 auto; }
+
+/*---------About me section---------*/
+#aboutMe {
+  background-color: #43d6a0;
+  color: white;
+  height: 100vh; }
+  #aboutMe h2 {
+    color: white;
+    color: #ffdf3c; }
+  #aboutMe p {
+    font-size: 25px;
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: white; }
+
 /*-----Skills section------*/
-#my_skills {
+#mySkills {
   padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,14 +814,32 @@ h3 {
   -webkit-flex-direction: column;
   flex-direction: column;
   align-content: center;
-  padding-bottom: 100px;
-  background-color: #030303; }
+  padding: 0; }
 
-#my_skills h4 {
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
-  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
-  color: whitesmoke;
-  margin: 0; }
+#mySkills .wrap-it h4 {
+  color: black;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 270px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.wrap-it {
+  background: url("../img/londonpink3.jpg") repeat;
+  background-color: #030303;
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 123px; }
+  .wrap-it .section-header {
+    position: relative;
+    font-size: 30px;
+    color: #ff1182;
+    justify-content: center; }
+    .wrap-it .section-header h2 {
+      color: black; }
 
 .section-header {
   font-size: 10px;
@@ -759,7 +851,7 @@ h3 {
 .skill-wrapper {
   margin: 0 auto;
   width: 750px;
-  height: 475px;
+  height: 470px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -767,7 +859,8 @@ h3 {
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position: relative; }
 
 .skill-wrapper #container {
   align-items: space-between;
@@ -777,10 +870,10 @@ h3 {
 .bar-main-container {
   margin: 10px auto;
   width: 300px;
-  height: 50px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  height: 39px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
   font-family: sans-serif;
   font-weight: normal;
   font-size: 0.8em;
@@ -795,9 +888,11 @@ h3 {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  padding: 9px 0px;
+  padding: 4px 0px;
   width: 18%;
-  height: 16px; }
+  height: 16px;
+  color: black;
+  font-weight: 900; }
 
 .bar-container {
   float: right;
@@ -807,12 +902,12 @@ h3 {
   height: 10px;
   background: rgba(0, 0, 0, 0.13);
   width: 78%;
-  margin: 12px 0px;
+  margin: 7px 0px;
   overflow: hidden; }
 
 .bar {
   float: left;
-  background: #FFF;
+  background: #100e15;
   height: 100%;
   -webkit-border-radius: 10px 0px 0px 10px;
   -moz-border-radius: 10px 0px 0px 10px;
@@ -851,7 +946,8 @@ h3 {
   background: #ff1182; }
 
 .colorTwo {
-  background: #ffdf3c; }
+  background: #100e15;
+  background: white; }
 
 .colorThree {
   background: #199875; }
@@ -866,7 +962,8 @@ h3 {
 
   .bar-main-container {
     height: 150px;
-    width: 700px; }
+    width: 700px;
+    border-radius: 23px; }
 
   .skill-wrapper #container {
     width: 700px; }
@@ -877,7 +974,7 @@ h3 {
 
   .bar-percentage {
     height: 65px;
-    margin: 25px 0px;
+    margin: 25px 5px;
     font-size: 57px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #my_skills,
@@ -893,7 +990,7 @@ h3 {
 
   .skill-wrapper {
     width: 100%;
-    height: 860px; }
+    height: 780px; }
 
   .skill-wrapper #container {
     width: 490px;
@@ -911,5 +1008,42 @@ h3 {
   .skill-wrapper {
     width: 50%;
     height: 1000px; } }
+/*-----------My works--------*/
+#myWorks h2 {
+  color: #199875; }
+
+/*-----------Contact--------*/
+#contact {
+  background-color: #e4df1e; }
+  #contact h2 {
+    margin: 0 auto;
+    font-family: 'appleberry';
+    color: #ff1182; }
+
+form {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  width: 30%;
+  height: 500px;
+  margin: 50px; }
+  form input, form textarea {
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    border: 2px solid black;
+    margin: 20px 0; }
+  form textarea:focus, form input:focus {
+    outline: none; }
+  form textarea {
+    height: 180px;
+    border-radius: 10px; }
+  form input {
+    height: 40px;
+    border-radius: 5px; }
+  form h4 {
+    font-size: 25px;
+    color: white;
+    font-family: 'appleberry'; }
 
 /*# sourceMappingURL=style.css.map */
