@@ -1,0 +1,12 @@
+#myStory .slider-wrapper .book {
+  background-image: url("../img/book.png");
+  background-position: center;
+  background-size: cover;
+  height:554px;
+  width:900px;
+  & img {
+    position: relative;
+    top: 24px;
+    left: -8px;
+  }
+}

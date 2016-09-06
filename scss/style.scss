@@ -1,22 +1,35 @@
-@font-face {font-family:"appleberry";src:url("appleberry.eot?") format("eot"),url("appleberry.woff") format("woff"),url("appleberry.ttf") format("truetype"),url("appleberry.svg#appleberry") format("svg");font-weight:normal;font-style:normal;}
 
-$pinkColor: rgb(255, 17, 130);
-$yellowColor: rgb(255, 223, 60);
-$turqoisColor: rgb(25, 152, 117);
-
+$pinkColor: rgb(255,
+17,
+130);
+$yellowColor: rgb(255,
+223,
+60);
+$turqoisColor: rgb(25,
+152,
+117);
 @import "partials/normalize";
-@import "partials/animations";
+@import "partials/fonts";
 @import "partials/mobileVersion";
+@import "partials/slider";
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'josefin_sansregular';
+}
+
+h1,
+h2,
+h3,
+h4 {
+font-family: 'sacramentoregular';
 }
 h2 {
-  font-size:55px;
-    font-family: 'appleberry';
-    font-weight: 100;
-    text-align:center;
-    padding-top:70px;
+  font-size: 68px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 70px;
 }
+
 header {
   margin: 0;
 }
@@ -32,15 +45,17 @@ h1 {
   position: absolute;
   top: 0;
   font-style: italic;
-  font-size: 3.5em;
+  font-size: 5.5em;
+  margin:30px 0;
 }
 
 h3 {
   position: absolute;
   top: 0;
   font-style: italic;
-  font-size: 1.5em;
-  right: 0;
+  font-size: 2.5em;
+  right: 3%;
+  margin:75px 0;
 }
 
 #wrapper .myFace {
@@ -92,8 +107,8 @@ h3 {
 }
 
 .self-reliant {
-  top: 20%;
-  left: 72%;
+  top: 22%;
+  left: 69%;
   width: 12.5%;
   background-image: url("../img/samodzielna.png");
 }
@@ -129,7 +144,7 @@ h3 {
 }
 
 .four {
-  top: 20%;
+  top: 30%;
   left: 72%;
 }
 
@@ -147,7 +162,7 @@ h3 {
   display: none;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px)  {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   h1 {
     top: 0;
     right: 3%;
@@ -203,49 +218,42 @@ h3 {
     left: 76%;
   }
   .feature {
-  height: 15%;
-}
+    height: 15%;
+  }
   .creative {
-  top: 17%;
+    top: 17%;
     left: 58%;
-  width: 33%;
-}
-
-.motivated {
-  top: 31%;
+    width: 33%;
+  }
+  .motivated {
+    top: 31%;
     left: 63%;
-  width: 38%;
-}
-
-.consistant {
-  top: 46%;
+    width: 38%;
+  }
+  .consistant {
+    top: 46%;
     left: 50%;
-  width: 36%;
-}
-
-.self-reliant {
-  top: 83%;
+    width: 36%;
+  }
+  .self-reliant {
+    top: 83%;
     left: 69%;
-  width: 31%;
-}
-
-.responsible {
-   top: 73%;
+    width: 31%;
+  }
+  .responsible {
+    top: 73%;
     left: 39%;
-  width: 42%;
-}
-
-.disciplined {
-  top: 60%;
+    width: 42%;
+  }
+  .disciplined {
+    top: 60%;
     left: 57%;
-  height: 15%;
-  width: 42%;
+    height: 15%;
+    width: 42%;
+  }
 }
-}
 
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #wrapper .myFace {
     display: none;
   }
@@ -253,7 +261,7 @@ h3 {
     display: block;
     height: 100vh;
     width: 100%;
-  } 
+  }
   h1 {
     top: 0;
     right: 1%;
@@ -267,7 +275,6 @@ h3 {
     font-size: 3em;
     width: 460px;
   }
-
   .questionMark {
     height: 11%;
     width: 8.3%;
@@ -297,47 +304,44 @@ h3 {
     left: 76%;
   }
   .feature {
-  height: 15%;
-}
+    height: 15%;
+  }
   .creative {
-  top: 20%;
+    top: 20%;
     left: 50%;
-  width: 26%;
-}
-
-.motivated {
-  top: 31%;
+    width: 26%;
+  }
+  .motivated {
+    top: 31%;
     left: 68%;
-  width: 28%;
-}
-
-.consistant {
-  top: 46%;
+    width: 28%;
+  }
+  .consistant {
+    top: 46%;
     left: 50%;
-  width: 26%;
-}
-
-.self-reliant {
-  top: 83%;
+    width: 26%;
+  }
+  .self-reliant {
+    top: 83%;
     left: 69%;
-  width: 21%;
-}
-
-.responsible {
-   top: 73%;
+    width: 21%;
+  }
+  .responsible {
+    top: 73%;
     left: 39%;
-  width: 32%;
+    width: 32%;
+  }
+  .disciplined {
+    top: 60%;
+    left: 57%;
+    height: 15%;
+    width: 32%;
+  }
 }
 
-.disciplined {
-  top: 60%;
-    left: 57%;
-  height: 15%;
-  width: 32%;
-}
-  
-}
+
 /*----Nav bar-----*/
+
 .navigation {
   position: relative;
   top: -25px;
@@ -345,7 +349,7 @@ h3 {
   justify-content: space-around;
   height: 40px;
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -360,81 +364,101 @@ h3 {
     align-self: center;
     color: #000;
   }
-}
-/*----------Slider----------*/
-#myStory {
-  background-color: #fff;
-  padding:100px 0;
-  //background-image: url("../img/black3.jpg");
-  color:$yellowColor;
-  font-size:25px;
-  text-align:center;
-  font-weight:700;
- // text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.6);
-  & h2 {
-    color:black;
+  & a:first-child:hover, a:nth-child(4):hover {
+    color:$yellowColor;
+  }
+  & a:nth-child(2):hover, a:nth-child(5):hover {
+    color:$turqoisColor;
+  }
+  & a:nth-child(3):hover {
+    color: $pinkColor;
   }
 }
-.slider-wrapper {
-  display:flex;
-  justify-content: space-around;
-	align-items: center;
+
+
+/*----------Slider----------*/
+
+#myStory {
+  background-color: #fff;
+  padding: 100px 0;
+  //background-image: url("../img/black3.jpg");
+  color: $yellowColor;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  // text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.6);
+  & h2 {
+    color: black;
+  }
 }
-#myStory .slider-wrapper .znak1  {
-  height:64px;
-  width:64px;
+
+.slider-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#myStory .slider-wrapper .znak1 {
+  height: 64px;
+  width: 64px;
   background-image: url("../img/arrow1.png");
 }
+
 #myStory .slider-wrapper .znak2 {
-  height:64px;
-  width:64px;
+  height: 64px;
+  width: 64px;
   background-image: url("../img/arrow2.png");
-  float:right;
-  
+  float: right;
 }
+
 .slider {
-  height:500px;
-  width:601px;
-  padding:100px 0;
-  margin:0;
+  height: 500px;
+  width: 601px;
+  padding: 100px 0;
+  margin: 0;
 }
+
 .slider li:not(.visible) {
-  display:none;
+  display: none;
 }
+
 .visible {
-  display:block;
+  display: block;
 }
+
 .uni {
   background-image: url("../img/uwr.png");
   background-position: center;
-  background-size:cover;
-  height:100px;
-  width:315px;
-  margin:0 auto;
+  background-size: cover;
+  height: 100px;
+  width: 315px;
+  margin: 0 auto;
 }
+
+
 /*---------About me section---------*/
 
 #aboutMe {
   background-color: rgb(67, 214, 160);
- // background: linear-gradient(rgb(67, 214, 160), rgb(6, 141, 100));
-  color:white;
-  height:100vh;
+  // background: linear-gradient(rgb(67, 214, 160), rgb(6, 141, 100));
+  color: white;
+  height: 100vh;
   & h2 {
-    color:white;
-    color:$yellowColor;
+    color: white;
+    color: $yellowColor;
   }
   & p {
-    font-size:25px;
-    width:550px;
-    margin:0 auto;
+    font-size: 25px;
+    width: 550px;
+    margin: 0 auto;
     text-align: center;
-    color:white;
+    color: white;
   }
-  
 }
 
 
 /*-----Skills section------*/
+
 #mySkills {
   padding-top: 100px;
   display: -webkit-box;
@@ -444,43 +468,38 @@ h3 {
   -webkit-flex-direction: column;
   flex-direction: column;
   align-content: center;
-  padding:0;
+  padding: 0;
 }
 
 #mySkills .wrap-it h4 {
-//  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
-//  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.9);
   color: black;
-  font-size:18px;
-//  background-color:rgb(255, 255, 255);
-//  border: 1px solid black;
-//  border-radius:10px;
-  margin:0 auto;
-  width:270px;
-  text-transform: uppercase;
-  font-weight:700;
+  font-size: 20px;
+  margin: 0 auto;
+  width: 270px;
+  font-weight:500;
+  font-family: 'josefin_sansregular';
 }
+
 .wrap-it {
   background: url("../img/londonpink3.jpg") repeat;
-   background-color: #030303;
+  background-color: #030303;
   min-height: 100%;
-
-	background-size: cover;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
   padding-bottom: 123px;
   & .section-header {
-    position:relative;
-    font-size:30px;
-    color:$pinkColor;
-    justify-content:center;
+    position: relative;
+    font-size: 30px;
+    color: $pinkColor;
+    justify-content: center;
     & h2 {
-      color:black;
+      color: black;
     }
   }
 }
+
 .section-header {
   font-size: 10px;
   align-items: center;
@@ -501,7 +520,7 @@ h3 {
   -webkit-flex-direction: column;
   flex-direction: column;
   flex-wrap: wrap;
-  position:relative;
+  position: relative;
 }
 
 .skill-wrapper #container {
@@ -536,7 +555,7 @@ h3 {
   padding: 4px 0px;
   width: 18%;
   height: 16px;
-  color:black;
+  color: black;
   font-weight: 900;
 }
 
@@ -607,14 +626,11 @@ h3 {
 .colorTwo {
   background: rgb(16, 14, 21);
   background: white;
-  
 }
 
 .colorThree {
   background: $turqoisColor;
 }
-
-
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
   #my_skills,
@@ -627,7 +643,7 @@ h3 {
   .bar-main-container {
     height: 150px;
     width: 700px;
-    border-radius:23px;
+    border-radius: 23px;
   }
   .skill-wrapper #container {
     width: 700px;
@@ -642,7 +658,8 @@ h3 {
     font-size: 57px;
   }
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #my_skills,
   .skill-wrapper {
     height: 2800px;
@@ -655,12 +672,12 @@ h3 {
     width: 370px;
   }
   .skill-wrapper {
-    width:100%;
-    height:780px;
+    width: 100%;
+    height: 780px;
   }
   .skill-wrapper #container {
     width: 490px;
-    margin:0;
+    margin: 0;
   }
   .bar-container {
     height: 30px;
@@ -672,55 +689,64 @@ h3 {
     font-size: 35px;
   }
 }
-@media (max-width : 750px) {
+
+@media (max-width: 750px) {
   .skill-wrapper {
-    width:50%;
-    height:1000px;
+    width: 50%;
+    height: 1000px;
   }
 }
+
+
 /*-----------My works--------*/
+
 #myWorks {
   & h2 {
     color: $turqoisColor;
   }
 }
+
+
 /*-----------Contact--------*/
+
 #contact {
-  background-color: rgb(228,223,30);
+  background-color: rgb(228, 223, 30);
   & h2 {
-    margin:0 auto;
-    font-family: 'appleberry';
-    color:$pinkColor;
+    margin: 0 auto;
+    color: $pinkColor;
   }
 }
+
 form {
-  display:flex;
+  display: flex;
   align-content: space-around;
   flex-direction: column;
-  width:30%;
-  height:500px;
-  margin:50px;
- & input,textarea {
-  background-color:black;
-  color:white;
-   font-size:22px;
-   border: 2px solid black;
-   margin:20px 0;
-}
-  & textarea:focus, input:focus{
+  width: 30%;
+  height: 500px;
+  margin: 50px;
+  & input,
+  textarea {
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    border: 2px solid black;
+    margin: 20px 0;
+  }
+  & textarea:focus,
+  input:focus {
     outline: none;
-}
+  }
   & textarea {
-    height:180px;
-    border-radius:10px;
+    height: 180px;
+    border-radius: 10px;
   }
   & input {
-    height:40px;
-    border-radius:5px;
+    height: 40px;
+    border-radius: 5px;
   }
   & h4 {
-    font-size:25px;
-    color:white;
-    font-family:'appleberry';
+    font-size: 45px;
+    color: white;
+    margin:20px 0;
   }
 }
