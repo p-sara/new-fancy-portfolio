@@ -1,20 +1,14 @@
 
-$pinkColor: rgb(255,
-17,
-130);
-$yellowColor: rgb(255,
-223,
-60);
-$turqoisColor: rgb(25,
-152,
-117);
+$pinkColor: rgb(255,17,130);
+$yellowColor: rgb(255,223,60);
+$turqoisColor: rgb(25,152,117);
 @import "partials/normalize";
 @import "partials/fonts";
 @import "partials/mobileVersion";
 @import "partials/slider";
 
 body {
-  font-family: 'josefin_sansregular';
+  font-family: 'open_sanscondensed_light';
 }
 
 h1,
@@ -361,13 +355,14 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
+    font-size:18px;
     align-self: center;
     color: #000;
   }
-  & a:first-child:hover, a:nth-child(4):hover {
+  & a:first-child:hover, a:nth-child(5):hover {
     color:$yellowColor;
   }
-  & a:nth-child(2):hover, a:nth-child(5):hover {
+  & a:nth-child(2):hover, a:nth-child(4):hover {
     color:$turqoisColor;
   }
   & a:nth-child(3):hover {
@@ -380,61 +375,13 @@ h3 {
 
 #myStory {
   background-color: #fff;
-  padding: 100px 0;
-  //background-image: url("../img/black3.jpg");
   color: $yellowColor;
-  font-size: 25px;
   text-align: center;
-  font-weight: 700;
-  // text-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.6);
+  padding-bottom:70px;
   & h2 {
-    color: black;
+    color: $pinkColor;
   }
 }
-
-.slider-wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#myStory .slider-wrapper .znak1 {
-  height: 64px;
-  width: 64px;
-  background-image: url("../img/arrow1.png");
-}
-
-#myStory .slider-wrapper .znak2 {
-  height: 64px;
-  width: 64px;
-  background-image: url("../img/arrow2.png");
-  float: right;
-}
-
-.slider {
-  height: 500px;
-  width: 601px;
-  padding: 100px 0;
-  margin: 0;
-}
-
-.slider li:not(.visible) {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-.uni {
-  background-image: url("../img/uwr.png");
-  background-position: center;
-  background-size: cover;
-  height: 100px;
-  width: 315px;
-  margin: 0 auto;
-}
-
 
 /*---------About me section---------*/
 
@@ -446,6 +393,7 @@ h3 {
   & h2 {
     color: white;
     color: $yellowColor;
+    margin-bottom:40px;
   }
   & p {
     font-size: 25px;
@@ -477,7 +425,8 @@ h3 {
   margin: 0 auto;
   width: 270px;
   font-weight:500;
-  font-family: 'josefin_sansregular';
+  font-family: 'open_sanscondensed_light';
+  text-transform: uppercase;
 }
 
 .wrap-it {
@@ -701,8 +650,48 @@ h3 {
 /*-----------My works--------*/
 
 #myWorks {
+  margin-bottom: 100px;
   & h2 {
     color: $turqoisColor;
+  }
+  & .work-wrapper {
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+    position:relative;
+      & .size {
+        width:50%;
+        height:200px;
+        background-position:center;
+        background-size:cover;
+        }
+    & .oldPortfolio {
+      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/oldportfolio.jpg");
+    }
+    & .bicycle {
+      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/bike.jpg");
+    }
+    & .bhagaskara {
+      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/bhagaskara.png");
+    }
+    & .shoppingList {
+      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/shoppinglist.jpg");
+    }
+    & .email {
+      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/email.jpg");
+    }
+    & .sitOnChair {
+      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/sitOnChair.jpg");
+    }
+  & .work-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
   }
 }
 
