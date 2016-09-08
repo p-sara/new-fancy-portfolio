@@ -874,10 +874,12 @@ h3 {
     font-size: 18px;
     align-self: center;
     color: #000; }
-  .navigation a:first-child:hover, .navigation a:nth-child(5):hover {
+  .navigation a:first-child:hover,
+  .navigation a:nth-child(5):hover {
     color: #ffdf3c; }
-  .navigation a:nth-child(2):hover, .navigation a:nth-child(4):hover {
-    color: #199875; }
+  .navigation a:nth-child(2):hover,
+  .navigation a:nth-child(4):hover {
+    color: #43d6a0; }
   .navigation a:nth-child(3):hover {
     color: #ff1182; }
 
@@ -895,16 +897,36 @@ h3 {
   background-color: #43d6a0;
   color: white;
   height: 100vh; }
-  #aboutMe h2 {
-    color: white;
-    color: #ffdf3c;
-    margin-bottom: 40px; }
-  #aboutMe p {
-    font-size: 25px;
-    width: 550px;
+  #aboutMe .background {
+    height: 520px;
+    width: 725px;
+    background-image: url("../img/blue22.png");
+    background-size: cover;
     margin: 0 auto;
-    text-align: center;
-    color: white; }
+    margin-top: 40px;
+    position: relative;
+    top: 60px;
+    border-radius: 30px; }
+    #aboutMe .background .background-wrapper {
+      height: 490px;
+      width: 695px;
+      position: relative;
+      top: 15px;
+      left: 15px;
+      background-color: #43d6a0;
+      border-radius: 30px; }
+      #aboutMe .background .background-wrapper h2 {
+        color: white;
+        color: #ffdf3c;
+        margin-bottom: 15px;
+        padding-top: 25px; }
+      #aboutMe .background .background-wrapper p {
+        font-size: 25px;
+        width: 550px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        font-weight: 500; }
 
 /*-----Skills section------*/
 #mySkills {
@@ -1053,7 +1075,7 @@ h3 {
   background: white; }
 
 .colorThree {
-  background: #199875; }
+  background: #43d6a0; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
   #my_skills,
@@ -1113,54 +1135,142 @@ h3 {
     height: 1000px; } }
 /*-----------My works--------*/
 #myWorks {
-  margin-bottom: 100px; }
+  margin-bottom: 150px; }
   #myWorks h2 {
-    color: #199875; }
+    color: #43d6a0;
+    padding-top: 35px; }
   #myWorks .work-wrapper {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    position: relative; }
+    position: relative;
+    justify-content: space-around; }
     #myWorks .work-wrapper .size {
-      width: 50%;
-      height: 200px;
-      background-position: center;
-      background-size: cover; }
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      margin: 40px 0;
+      position: relative;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      cursor: default; }
+      #myWorks .work-wrapper .size .info-wrap {
+        position: absolute;
+        margin: 35px;
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+        perspective: 800px;
+        transition: all 0.4s ease-in-out;
+        top: 20px;
+        left: 20px;
+        background: #f9f9f9;
+        color: #000;
+        box-shadow: 0 0 0 55px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8); }
+        #myWorks .work-wrapper .size .info-wrap .info {
+          position: absolute;
+          width: 290px;
+          height: 290px;
+          border-radius: 50%;
+          transition: all 0.4s ease-in-out;
+          transform-style: preserve-3d; }
+          #myWorks .work-wrapper .size .info-wrap .info div {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-position: center center;
+            backface-visibility: hidden; }
+          #myWorks .work-wrapper .size .info-wrap .info .port {
+            background-color: #d4af1c; }
+          #myWorks .work-wrapper .size .info-wrap .info .bike {
+            background-color: #eec3c0; }
+          #myWorks .work-wrapper .size .info-wrap .info .bhaga {
+            background-color: #9f449b; }
+          #myWorks .work-wrapper .size .info-wrap .info .shop {
+            background-color: #137a7f; }
+          #myWorks .work-wrapper .size .info-wrap .info .mail {
+            background-color: #8bc83e; }
+          #myWorks .work-wrapper .size .info-wrap .info .chair {
+            background-color: #e73b34; }
+          #myWorks .work-wrapper .size .info-wrap .info .info-back {
+            transform: rotate3d(0, 1, 0, 180deg); }
+            #myWorks .work-wrapper .size .info-wrap .info .info-back h3 {
+              text-transform: uppercase;
+              text-align: center;
+              letter-spacing: 2px;
+              font-size: 20px;
+              font-family: 'open_sanscondensed_light';
+              font-style: normal;
+              top: 0;
+              left: 20px;
+              margin: 45px 0;
+              height: 20px; }
+            #myWorks .work-wrapper .size .info-wrap .info .info-back p {
+              padding: 10px 5px;
+              margin: 0 auto;
+              margin-top: 85px;
+              text-align: center;
+              width: 200px;
+              font-size: 18px;
+              border-top: 1px solid; }
+              #myWorks .work-wrapper .size .info-wrap .info .info-back p a {
+                display: block;
+                color: black;
+                font-style: normal;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: 1px;
+                padding: 4px 2px;
+                border-radius: 3px;
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 70px;
+                text-decoration: none;
+                background-color: rgba(0, 0, 0, 0.2);
+                transition: all 0.4s ease-in-out; }
+              #myWorks .work-wrapper .size .info-wrap .info .info-back p a:hover {
+                background-color: transparent;
+                border: 1px black solid;
+                box-sizing: border-box; }
+    #myWorks .work-wrapper .size:hover .info-wrap {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(115, 114, 23, 0.8); }
+    #myWorks .work-wrapper .size:hover .info {
+      transform: rotate3d(0, 1, 0, -180deg); }
     #myWorks .work-wrapper .oldPortfolio {
-      background: linear-gradient(0deg, rgba(255, 223, 60, 0.5), rgba(2, 173, 231, 0.5)), url("../img/oldportfolio.jpg"); }
+      background: url("../img/oldportfolioo.jpg"); }
     #myWorks .work-wrapper .bicycle {
-      background: linear-gradient(0deg, rgba(255, 223, 60, 0.5), rgba(2, 173, 231, 0.5)), url("../img/bike.jpg"); }
+      background: url("../img/bike1.jpg"); }
     #myWorks .work-wrapper .bhagaskara {
-      background: linear-gradient(0deg, rgba(255, 223, 60, 0.5), rgba(2, 173, 231, 0.5)), url("../img/bhagaskara.png"); }
+      background: url("../img/bhagaskara.png"); }
     #myWorks .work-wrapper .shoppingList {
-      background: linear-gradient(0deg, rgba(255, 223, 60, 0.5), rgba(2, 173, 231, 0.5)), url("../img/shoppinglist.jpg"); }
+      background: url("../img/shoppinglist.jpg"); }
     #myWorks .work-wrapper .email {
-      background: linear-gradient(0deg, rgba(255, 223, 60, 0.5), rgba(2, 173, 231, 0.5)), url("../img/email.jpg"); }
+      background: url("../img/email1.jpg"); }
     #myWorks .work-wrapper .sitOnChair {
-      background: linear-gradient(0deg, rgba(255, 223, 60, 0.5), rgba(2, 173, 231, 0.5)), url("../img/sitOnChair.jpg"); }
-    #myWorks .work-wrapper .work-wrapper:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.7); }
+      background: url("../img/sitOnChair.jpg"); }
 
 /*-----------Contact--------*/
 #contact {
-  background-color: #e4df1e; }
+  background-color: #e4df1e;
+  padding-bottom: 50px; }
   #contact h2 {
-    margin: 0 auto;
-    color: #ff1182; }
+    width: 100%;
+    color: #FF0D66; }
+  #contact .contact-wrap {
+    display: flex;
+    flex-wrap: wrap; }
+    #contact .contact-wrap .form-wrapper {
+      width: 49%; }
 
 form {
   display: flex;
   align-content: space-around;
   flex-direction: column;
-  width: 30%;
+  width: 70%;
   height: 500px;
-  margin: 50px; }
+  margin-left: 10%; }
   form input,
   form textarea {
     background-color: black;
@@ -1181,5 +1291,75 @@ form {
     font-size: 45px;
     color: white;
     margin: 20px 0; }
+
+.icons {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px; }
+  .icons .icon {
+    background-repeat: no-repeat; }
+  .icons .fb {
+    background-image: url("../img/facebook.png");
+    background-position: bottom center;
+    height: 130px;
+    width: 100px; }
+  .icons .fb:hover {
+    background-position: top; }
+  .icons .github {
+    background-image: url("../img/github1.png");
+    background-position: bottom center;
+    height: 112px;
+    width: 150px;
+    margin-top: 20px; }
+  .icons .github:hover {
+    background-position: top; }
+  .icons .linkedin {
+    background-image: url("../img/linkedin.png");
+    background-position: bottom center;
+    height: 130px;
+    width: 150px; }
+  .icons .linkedin:hover {
+    background-position: top; }
+  .icons .phone {
+    background-image: url("../img/mobile.png");
+    background-position: bottom center;
+    height: 128px;
+    width: 150px; }
+  .icons .phone-number {
+    position: relative;
+    top: -10px;
+    background-color: #000;
+    border: 1px solid #fff;
+    color: white;
+    height: 25px; }
+  .icons .phone:hover:after {
+    content: "";
+    display: block;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-width: 0 2px 2px 0;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    position: relative;
+    right: -208px;
+    top: -50px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg); }
+  .icons .phone:hover {
+    background-position: top; }
+
+footer {
+  height: 20px;
+  text-align: center;
+  color: #ff1182;
+  font-weight: 700;
+  font-size: 22px; }
+  footer p {
+    margin: 15px; }
 
 /*# sourceMappingURL=style.css.map */

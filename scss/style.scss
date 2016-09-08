@@ -1,12 +1,10 @@
-
-$pinkColor: rgb(255,17,130);
-$yellowColor: rgb(255,223,60);
-$turqoisColor: rgb(25,152,117);
+$pinkColor: rgb(255, 17, 130);
+$yellowColor: rgb(255, 223, 60);
+$turqoisColor: rgb(67, 214, 160);
 @import "partials/normalize";
 @import "partials/fonts";
 @import "partials/mobileVersion";
 @import "partials/slider";
-
 body {
   font-family: 'open_sanscondensed_light';
 }
@@ -15,8 +13,9 @@ h1,
 h2,
 h3,
 h4 {
-font-family: 'sacramentoregular';
+  font-family: 'sacramentoregular';
 }
+
 h2 {
   font-size: 68px;
   font-weight: 800;
@@ -40,7 +39,7 @@ h1 {
   top: 0;
   font-style: italic;
   font-size: 5.5em;
-  margin:30px 0;
+  margin: 30px 0;
 }
 
 h3 {
@@ -49,7 +48,7 @@ h3 {
   font-style: italic;
   font-size: 2.5em;
   right: 3%;
-  margin:75px 0;
+  margin: 75px 0;
 }
 
 #wrapper .myFace {
@@ -355,15 +354,17 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    font-size:18px;
+    font-size: 18px;
     align-self: center;
     color: #000;
   }
-  & a:first-child:hover, a:nth-child(5):hover {
-    color:$yellowColor;
+  & a:first-child:hover,
+  a:nth-child(5):hover {
+    color: $yellowColor;
   }
-  & a:nth-child(2):hover, a:nth-child(4):hover {
-    color:$turqoisColor;
+  & a:nth-child(2):hover,
+  a:nth-child(4):hover {
+    color: $turqoisColor;
   }
   & a:nth-child(3):hover {
     color: $pinkColor;
@@ -377,30 +378,53 @@ h3 {
   background-color: #fff;
   color: $yellowColor;
   text-align: center;
-  padding-bottom:70px;
+  padding-bottom: 70px;
   & h2 {
     color: $pinkColor;
   }
 }
 
+
 /*---------About me section---------*/
 
 #aboutMe {
-  background-color: rgb(67, 214, 160);
+  background-color: $turqoisColor;
   // background: linear-gradient(rgb(67, 214, 160), rgb(6, 141, 100));
   color: white;
   height: 100vh;
-  & h2 {
-    color: white;
-    color: $yellowColor;
-    margin-bottom:40px;
-  }
-  & p {
-    font-size: 25px;
-    width: 550px;
+  & .background {
+    height: 520px;
+    width: 725px;
+    background-image: url("../img/blue22.png");
+    background-size: cover;
     margin: 0 auto;
-    text-align: center;
-    color: white;
+    margin-top: 40px;
+    position: relative;
+    top: 60px;
+    border-radius: 30px;
+    & .background-wrapper {
+      height: 490px;
+      width: 695px;
+      position: relative;
+      top: 15px;
+      left: 15px;
+      background-color: $turqoisColor;
+      border-radius: 30px;
+      & h2 {
+        color: white;
+        color: $yellowColor;
+        margin-bottom: 15px;
+        padding-top: 25px;
+      }
+      & p {
+        font-size: 25px;
+        width: 550px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+      }
+    }
   }
 }
 
@@ -424,7 +448,7 @@ h3 {
   font-size: 20px;
   margin: 0 auto;
   width: 270px;
-  font-weight:500;
+  font-weight: 500;
   font-family: 'open_sanscondensed_light';
   text-transform: uppercase;
 }
@@ -650,48 +674,150 @@ h3 {
 /*-----------My works--------*/
 
 #myWorks {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   & h2 {
     color: $turqoisColor;
+    padding-top:35px;
   }
   & .work-wrapper {
-    display:flex;
-    width:100%;
+    display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    position:relative;
-      & .size {
-        width:50%;
-        height:200px;
-        background-position:center;
-        background-size:cover;
+    position: relative;
+    justify-content: space-around;
+    & .size {
+      width: 400px;
+      height: 400px;
+      //background-position:center;
+      //background-size: cover;
+      border-radius: 50%;
+      margin: 40px 0;
+      position: relative;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      cursor: default;
+      & .info-wrap {
+        position: absolute;
+        margin:35px;
+        width: 290px;
+        height: 290px;
+        border-radius: 50%;
+        perspective: 800px;
+        transition: all 0.4s ease-in-out;
+        top: 20px;
+        left: 20px;
+        background: #f9f9f9;
+        color:#000;
+        box-shadow: 0 0 0 55px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+        & .info {
+          position: absolute;
+          width: 290px;
+          height: 290px;
+          border-radius: 50%;
+          transition: all 0.4s ease-in-out;
+          transform-style: preserve-3d;
+          & div {
+            display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	backface-visibility: hidden;
+          }
+          & .port {
+            background-color: rgb(212, 175, 28);
+          }
+          & .bike {
+            background-color: rgb(238, 195, 192);
+          }
+          & .bhaga {
+            background-color: rgb(159, 68, 155); 
+          }
+          & .shop {
+            background-color: rgb(19, 122, 127);
+          }
+          & .mail {
+            background-color: rgb(139, 200, 62);
+          }
+          & .chair {
+            background-color: rgb(231, 59, 52);
+          }
+          & .info-back {
+            transform: rotate3d(0, 1, 0, 180deg);
+          & h3 {
+            text-transform: uppercase;
+            text-align:center;
+            letter-spacing: 2px;
+            font-size: 20px;
+            font-family: 'open_sanscondensed_light';
+            font-style:normal;
+            top:0;
+            left:20px;
+            margin: 45px 0;
+            //padding: 40px 0 0 0;
+            height: 20px;
+            //text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
+          }
+          & p {
+            padding: 10px 5px;
+            margin: 0 auto;
+            margin-top: 85px;
+            text-align:center;
+            width: 200px;
+            font-size: 18px;
+            border-top: 1px solid;
+            & a {
+              display: block;
+              color: black;
+              font-style: normal;
+              font-weight: 700;
+              text-transform: uppercase;
+              font-size: 18px;
+              letter-spacing: 1px;
+              padding: 4px 2px;
+              border-radius:3px;
+              margin: 0 auto;
+              margin-top: 10px;
+              width:70px;
+              text-decoration: none;
+              background-color: rgba(0, 0, 0, 0.2);
+              transition: all 0.4s ease-in-out;
+              
+                        }
+            & a:hover {
+              background-color:transparent;
+              border:1px black solid;
+              box-sizing:border-box;  
+            }
+            }
+          }
         }
+      }
+    }
+    & .size:hover .info-wrap {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8), inset 0 0 3px rgba(115, 114, 23, 0.8);
+    }
+    & .size:hover .info {
+      transform: rotate3d(0, 1, 0, -180deg);
+    }
     & .oldPortfolio {
-      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/oldportfolio.jpg");
+      background: url("../img/oldportfolioo.jpg");
     }
     & .bicycle {
-      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/bike.jpg");
+      background: url("../img/bike1.jpg");
     }
     & .bhagaskara {
-      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/bhagaskara.png");
+      background: url("../img/bhagaskara.png");
     }
     & .shoppingList {
-      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/shoppinglist.jpg");
+      background: url("../img/shoppinglist.jpg");
     }
     & .email {
-      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/email.jpg");
+      background: url("../img/email1.jpg");
     }
     & .sitOnChair {
-      background: linear-gradient(0deg, rgba(255,223,60,0.5), rgba(2,173,231,0.5)), url("../img/sitOnChair.jpg");
+      background: url("../img/sitOnChair.jpg");
     }
-  & .work-wrapper:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-  }
   }
 }
 
@@ -700,19 +826,27 @@ h3 {
 
 #contact {
   background-color: rgb(228, 223, 30);
+  padding-bottom:50px;
   & h2 {
-    margin: 0 auto;
-    color: $pinkColor;
+    width:100%;
+    color: #FF0D66;
   }
+  & .contact-wrap {
+    display:flex;
+   flex-wrap: wrap;
+    & .form-wrapper {
+    width:49%;
+  }
+  } 
 }
 
 form {
   display: flex;
   align-content: space-around;
   flex-direction: column;
-  width: 30%;
+  width: 70%;
   height: 500px;
-  margin: 50px;
+  margin-left:10%;
   & input,
   textarea {
     background-color: black;
@@ -736,6 +870,90 @@ form {
   & h4 {
     font-size: 45px;
     color: white;
-    margin:20px 0;
+    margin: 20px 0;
+  }
+}
+
+.icons {
+  width:50%;
+  display:flex;
+  flex-direction:row;
+  margin-top:200px;
+  & .icon {
+    background-repeat: no-repeat;
+  }
+  & .fb {
+    background-image: url("../img/facebook.png");
+    background-position:bottom center;
+    height:130px;
+    width:100px;
+  }
+  & .fb:hover {
+    background-position: top;
+  }
+  & .github {
+    background-image: url("../img/github1.png");
+    background-position:bottom center;
+    height:112px;
+    width:150px;
+    margin-top:20px;
+  }
+  & .github:hover {
+    background-position: top;
+  }
+  & .linkedin {
+    background-image: url("../img/linkedin.png");
+    background-position:bottom center;
+    height:130px;
+    width:150px;
+  }
+  & .linkedin:hover {
+    background-position: top;
+  }
+  & .phone {
+    background-image: url("../img/mobile.png");
+    background-position:bottom center;
+    height:128px;
+    width:150px;
+  }
+    & .phone-number {
+      position:relative;
+      top: -10px;
+      background-color: #000;
+      border: 1px solid #fff;
+      color:white;
+      height:25px;
+  }
+  & .phone:hover:after {
+  content: "";
+  display: block;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-width: 0 2px 2px 0;
+  width: 24px;
+  height: 24px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+  z-index: 1;
+  position: relative;
+  right: -208px;
+  top: -50px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+  & .phone:hover {
+    background-position: top;
+  }
+}
+
+footer {
+  height:20px;
+  text-align:center;
+  color: $pinkColor;
+  font-weight:700;
+  font-size:22px;
+  & p{
+  margin:15px;
   }
 }
