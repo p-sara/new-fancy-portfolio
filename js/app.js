@@ -119,7 +119,49 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   questionSix.addEventListener("click", changeImgMb6);
   
+  /*-----------STICKY MENU----------*/
   
+  var menu = $(".navigation");
+  var menuPositionTop = menu.position().top;
+   $(window).on("resize", function(){
+        var windowPositionLeft = $("body").scrollLeft();
+    });
+    
+    $(window).on("resize scroll", function(){
+      var windowPositionTop = $("body").scrollTop();
+      if (menuPositionTop<windowPositionTop){
+          menu.addClass("sticky");
+      }else{
+          menu.removeClass("sticky");
+      }      
+    }); 
+  
+  /*------------SKILLS----------*/
+  
+  $('.skill-wrapper').mouseenter(function(){
+$('.bar-percentage[data-percentage]').each(function () {
+  var progress = $(this);
+  var percentage = Math.ceil($(this).attr('data-percentage'));
+  $({countNum: 0}).animate({countNum: percentage}, {
+    duration: 2000,
+    easing:'linear',
+    step: function() {
+      // What todo on every count
+      var pct = Math.floor(this.countNum) + '%';
+      progress.text(pct) && progress.siblings().children().css('width',pct);
+    }
+  });
+});
+});
+  
+  //show phone number 
+  
+  $(".phone").mouseenter(function() {
+     $($(this)).next(".phone-number").css("display", "inline-block");
+   });
+  $(".phone").mouseleave(function() {
+     $($(this)).next(".phone-number").css("display", "none");
+   });
   
 });
 

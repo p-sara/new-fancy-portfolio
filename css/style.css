@@ -567,7 +567,7 @@ h2 {
   font-size: 68px;
   font-weight: 800;
   text-align: center;
-  padding-top: 70px; }
+  padding-top: 40px; }
 
 header {
   margin: 0; }
@@ -620,7 +620,7 @@ h3 {
   left: 20%;
   top: 21%;
   width: 12%;
-  background-image: url("../img/kreatywna.png"); }
+  background-image: url("../img/samodzielna.png"); }
 
 .motivated {
   top: 40%;
@@ -859,7 +859,7 @@ h3 {
   justify-content: space-around;
   height: 40px;
   width: 100%;
-  background-color: #fff;
+  background: #fff;
   margin: 0;
   padding: 0;
   list-style-type: none; }
@@ -871,23 +871,36 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 19px;
     align-self: center;
     color: #000; }
   .navigation a:first-child:hover,
   .navigation a:nth-child(5):hover {
-    color: #ffdf3c; }
+    color: #f4ca00; }
   .navigation a:nth-child(2):hover,
   .navigation a:nth-child(4):hover {
     color: #43d6a0; }
   .navigation a:nth-child(3):hover {
     color: #ff1182; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 0.5px solid black;
+  z-index: 9999;
+  background: transparent;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.2)); }
+
+.sticky:hover {
+  background: white; }
+
 /*----------Slider----------*/
 #myStory {
   background-color: #fff;
   color: #ffdf3c;
   text-align: center;
+  padding-top: 30px;
   padding-bottom: 70px; }
   #myStory h2 {
     color: #ff1182; }
@@ -896,19 +909,19 @@ h3 {
 #aboutMe {
   background-color: #43d6a0;
   color: white;
-  height: 100vh; }
+  padding-bottom: 180px; }
   #aboutMe .background {
-    height: 520px;
+    height: 510px;
     width: 725px;
-    background-image: url("../img/blue22.png");
+    background-image: url("../img/blue.png");
     background-size: cover;
     margin: 0 auto;
     margin-top: 40px;
     position: relative;
-    top: 60px;
+    top: 80px;
     border-radius: 30px; }
     #aboutMe .background .background-wrapper {
-      height: 490px;
+      height: 480px;
       width: 695px;
       position: relative;
       top: 15px;
@@ -930,7 +943,7 @@ h3 {
 
 /*-----Skills section------*/
 #mySkills {
-  padding-top: 100px;
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -950,7 +963,7 @@ h3 {
   text-transform: uppercase; }
 
 .wrap-it {
-  background: url("../img/londonpink3.jpg") repeat;
+  background: url("../img/londonpink.jpg") repeat;
   background-color: #030303;
   min-height: 100%;
   background-size: cover;
@@ -960,19 +973,20 @@ h3 {
   padding-bottom: 123px; }
   .wrap-it .section-header {
     position: relative;
-    font-size: 30px;
     color: #ff1182;
-    justify-content: center; }
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 auto; }
     .wrap-it .section-header h2 {
       color: black; }
 
-.section-header {
+/*.section-header {
   font-size: 10px;
   align-items: center;
   color: white;
   margin: 0 auto;
-  padding-bottom: 30px; }
-
+}*/
 .skill-wrapper {
   margin: 0 auto;
   width: 750px;
@@ -1254,6 +1268,7 @@ h3 {
 /*-----------Contact--------*/
 #contact {
   background-color: #e4df1e;
+  padding-top: 5px;
   padding-bottom: 50px; }
   #contact h2 {
     width: 100%;
@@ -1262,7 +1277,7 @@ h3 {
     display: flex;
     flex-wrap: wrap; }
     #contact .contact-wrap .form-wrapper {
-      width: 49%; }
+      width: 47%; }
 
 form {
   display: flex;
@@ -1270,7 +1285,7 @@ form {
   flex-direction: column;
   width: 70%;
   height: 500px;
-  margin-left: 10%; }
+  margin-left: 25%; }
   form input,
   form textarea {
     background-color: black;
@@ -1293,22 +1308,20 @@ form {
     margin: 20px 0; }
 
 .icons {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  margin-top: 200px; }
+  width: 53%;
+  margin-top: 220px; }
   .icons .icon {
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: inline-block; }
   .icons .fb {
     background-image: url("../img/facebook.png");
-    background-position: bottom center;
     height: 130px;
     width: 100px; }
   .icons .fb:hover {
     background-position: top; }
   .icons .github {
-    background-image: url("../img/github1.png");
-    background-position: bottom center;
+    background-image: url("../img/github.png");
     height: 112px;
     width: 150px;
     margin-top: 20px; }
@@ -1316,40 +1329,46 @@ form {
     background-position: top; }
   .icons .linkedin {
     background-image: url("../img/linkedin.png");
-    background-position: bottom center;
     height: 130px;
     width: 150px; }
   .icons .linkedin:hover {
     background-position: top; }
   .icons .phone {
     background-image: url("../img/mobile.png");
-    background-position: bottom center;
     height: 128px;
     width: 150px; }
   .icons .phone-number {
     position: relative;
-    top: -10px;
+    top: -60px;
+    left: -10px;
     background-color: #000;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
     color: white;
-    height: 25px; }
+    height: 25px;
+    width: 100px;
+    font-size: 19px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.5);
+    display: none; }
   .icons .phone:hover:after {
     content: "";
     display: block;
     background-color: #000;
     border: 2px solid #fff;
     border-width: 0 2px 2px 0;
-    width: 24px;
-    height: 24px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    width: 15px;
+    height: 15px;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1;
     position: relative;
-    right: -208px;
-    top: -50px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg); }
+    right: -135px;
+    top: 55px;
+    -webkit-transform: rotate(132deg);
+    -moz-transform: rotate(132deg);
+    -ms-transform: rotate(132deg);
+    -o-transform: rotate(132deg); }
   .icons .phone:hover {
     background-position: top; }
 
