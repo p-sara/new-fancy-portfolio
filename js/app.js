@@ -137,8 +137,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }); 
   
   /*------------SKILLS----------*/
+
+  var skills = $('.section-header');
+  var skillsPositionTop = skills.position().top;
+   $(window).on("resize", function(){
+        var windowPositionLeft = $("body").scrollLeft();
+    });
   
-  $('.skill-wrapper').mouseenter(function(){
+  
+    $(window).on("resize scroll", function (){
+      /*var scrollBottom = $(window).scrollTop() + $(window).height();
+      var windowPositionBottom = $(window).scrollTop() + $(window).height();
+      var windowPositionTop = $("body").scrollTop();*/
+      if (pageYOffset<skillsPositionTop-20 && pageYOffset>skillsPositionTop-80){
+        
 $('.bar-percentage[data-percentage]').each(function () {
   var progress = $(this);
   var percentage = Math.ceil($(this).attr('data-percentage'));
@@ -150,9 +162,14 @@ $('.bar-percentage[data-percentage]').each(function () {
       var pct = Math.floor(this.countNum) + '%';
       progress.text(pct) && progress.siblings().children().css('width',pct);
     }
-  });
+
+  });  
 });
-});
+   $(window).off("resize scroll");
+}
+      });
+ 
+    
   
   //show phone number 
   
