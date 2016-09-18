@@ -387,13 +387,14 @@ h3 {
 /*----------Slider----------*/
 
 #myStory {
+  margin-top:100px;
   background-color: #fff;
   color: $yellowColor;
   text-align: center;
-  padding-top:30px;
   padding-bottom: 70px;
   & h2 {
     color: $pinkColor;
+    padding-top:35px;
   }
 }
 

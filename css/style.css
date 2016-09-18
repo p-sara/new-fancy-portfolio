@@ -406,12 +406,16 @@ textarea {
   background-image: url("../img/book.png");
   background-position: center;
   background-size: cover;
-  height: 554px;
-  width: 900px; }
+  height: 500px;
+  width: 812px; }
   .bb-bookblock img {
     position: relative;
     top: 24px;
     left: -8px; }
+
+.slider-wrapper a, .slider-wrapper .bb-bookblock {
+  display: inline-block;
+  vertical-align: middle; }
 
 .bb-page {
   position: absolute;
@@ -541,7 +545,7 @@ textarea {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   display: none; }
 
 /* No JS */
@@ -871,7 +875,7 @@ h3 {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 19px;
+    font-size: 18px;
     align-self: center;
     color: #000; }
   .navigation a:first-child:hover,
@@ -897,13 +901,14 @@ h3 {
 
 /*----------Slider----------*/
 #myStory {
+  margin-top: 100px;
   background-color: #fff;
   color: #ffdf3c;
   text-align: center;
-  padding-top: 30px;
   padding-bottom: 70px; }
   #myStory h2 {
-    color: #ff1182; }
+    color: #ff1182;
+    padding-top: 35px; }
 
 /*---------About me section---------*/
 #aboutMe {
@@ -931,7 +936,7 @@ h3 {
       #aboutMe .background .background-wrapper h2 {
         color: white;
         color: #ffdf3c;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         padding-top: 25px; }
       #aboutMe .background .background-wrapper p {
         font-size: 25px;

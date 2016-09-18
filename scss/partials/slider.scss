@@ -11,8 +11,8 @@
   background-image: url("../img/book.png");
   background-position: center;
   background-size: cover;
-  height:554px;
-  width:900px;
+  height:500px;
+  width:812px;
   & img {
     position: relative;
     top: 24px;
@@ -20,6 +20,12 @@
   }
 }
 
+.slider-wrapper {
+  & a, .bb-bookblock {
+  display:inline-block;
+    vertical-align: middle;
+  }
+}
 
 .bb-page {
 	position: absolute;
@@ -176,7 +182,7 @@
 	height: 100%;
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0px;
 	display: none;
 }
 
