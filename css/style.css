@@ -581,21 +581,31 @@ header {
   width: 100%;
   font-size: 100%;
   display: inline-block; }
-
-h1 {
-  position: absolute;
-  top: 0;
-  font-style: italic;
-  font-size: 5.5em;
-  margin: 30px 0; }
-
-h3 {
-  position: absolute;
-  top: 0;
-  font-style: italic;
-  font-size: 2.5em;
-  right: 3%;
-  margin: 75px 0; }
+  #wrapper h1 {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    font-style: italic;
+    margin: 30px 0;
+    height: 13.5%;
+    width: 37%;
+    background: url(../img/sarapstro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    overflow: hidden; }
+  #wrapper h3 {
+    position: absolute;
+    top: 0;
+    background: url(../img/kliknij.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 9%;
+    width: 33%;
+    right: 2%;
+    margin: 75px 0; }
 
 #wrapper .myFace {
   width: 100%; }
@@ -611,8 +621,8 @@ h3 {
   height: 20%; }
 
 .questionMark {
-  height: 10%;
-  width: 1.7%;
+  height: 8%;
+  width: 1.3%;
   background-image: url("../img/qu4.png");
   background-size: cover;
   background-position: center;
@@ -623,7 +633,7 @@ h3 {
 .creative {
   left: 20%;
   top: 21%;
-  width: 12%;
+  width: 13%;
   background-image: url("../img/kreatywna.png"); }
 
 .motivated {
@@ -641,7 +651,7 @@ h3 {
 .self-reliant {
   top: 22%;
   left: 69%;
-  width: 12.5%;
+  width: 13%;
   background-image: url("../img/samodzielna.png"); }
 
 .responsible {
@@ -684,40 +694,36 @@ h3 {
 .hidden {
   display: none; }
 
+/*----MOBILE VERSION---------*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  h1 {
-    top: 0;
-    right: 3%;
-    width: 600px;
-    font-size: 5.5em;
-    margin: 30px 0; }
-
-  h3 {
-    top: 7%;
-    right: 7%;
-    font-size: 3em;
-    width: 400px; }
+  h2 {
+    font-size: 12em; }
 
   #wrapper .sprite {
     height: 100vh;
     width: 100%;
     overflow: hidden; }
-
   #wrapper .myFace {
     display: none; }
-
   #wrapper .myFaceMobile {
     display: block;
     height: 100%;
     width: 135%; }
+  #wrapper h1 {
+    width: 98%;
+    height: 9.5%; }
+  #wrapper h3 {
+    top: 6%;
+    height: 5.5%;
+    width: 75%; }
 
   .questionMark {
-    height: 11%;
-    width: 11.2%; }
+    height: 8%;
+    width: 5.2%; }
 
   .one {
     top: 20%;
-    left: 55%; }
+    left: 62%; }
 
   .two {
     top: 30%;
@@ -725,7 +731,7 @@ h3 {
 
   .three {
     top: 44%;
-    left: 60%; }
+    left: 65%; }
 
   .four {
     top: 84%;
@@ -733,7 +739,7 @@ h3 {
 
   .five {
     top: 73%;
-    left: 47%; }
+    left: 53%; }
 
   .six {
     top: 59%;
@@ -772,6 +778,7 @@ h3 {
     left: 57%;
     height: 15%;
     width: 42%; } }
+/*---------TABLET VERSION----------*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #wrapper .myFace {
     display: none; }
@@ -796,7 +803,7 @@ h3 {
 
   .questionMark {
     height: 11%;
-    width: 8.3%; }
+    width: 5.2%; }
 
   .one {
     top: 20%;
@@ -946,6 +953,16 @@ h3 {
         color: white;
         font-weight: 500; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #aboutMe {
+    height: 130vh; }
+    #aboutMe .background {
+      height: 131vh; }
+      #aboutMe .background .background-wrapper {
+        top: 2vh;
+        height: 127vh; }
+        #aboutMe .background .background-wrapper p {
+          font-size: 58px; } }
 /*-----Skills section------*/
 #mySkills {
   padding-top: 80px;
@@ -1101,11 +1118,12 @@ h3 {
   .skill-wrapper {
     height: 2800px; }
 
-  #my_skills h4 {
-    font-size: 55px; }
+  #mySkills .skill-wrapper h4 {
+    font-size: 55px;
+    width: 480px; }
 
   .bar-main-container {
-    height: 150px;
+    height: 110px;
     width: 700px;
     border-radius: 23px; }
 
@@ -1113,19 +1131,19 @@ h3 {
     width: 700px; }
 
   .bar-container {
-    height: 40px;
-    margin: 45px 0; }
+    height: 22px;
+    margin: 40px 0; }
 
   .bar-percentage {
-    height: 65px;
-    margin: 25px 5px;
-    font-size: 57px; } }
+    height: 48px;
+    margin: 22px 5px;
+    font-size: 40px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #my_skills,
   .skill-wrapper {
     height: 2800px; }
 
-  #my_skills h4 {
+  #mySkills .skill-wrapper h4 {
     font-size: 35px; }
 
   .bar-main-container {
@@ -1228,7 +1246,7 @@ h3 {
             #myWorks .work-wrapper .size .info-wrap .info .info-back p {
               padding: 10px 5px;
               margin: 0 auto;
-              margin-top: 85px;
+              margin-top: -30px;
               text-align: center;
               width: 200px;
               font-size: 17px;
@@ -1270,6 +1288,27 @@ h3 {
     #myWorks .work-wrapper .sitOnChair {
       background: url("../img/sitOnChair.jpg"); }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #myWorks .work-wrapper .size {
+    height: 800px;
+    width: 800px; }
+    #myWorks .work-wrapper .size .info-wrap {
+      height: 690px;
+      width: 690px;
+      margin: 35px; }
+      #myWorks .work-wrapper .size .info-wrap .info {
+        height: 690px;
+        width: 690px; }
+        #myWorks .work-wrapper .size .info-wrap .info .info-back h3 {
+          font-size: 4em;
+          margin: 115px 0; }
+        #myWorks .work-wrapper .size .info-wrap .info .info-back p {
+          width: 510px;
+          border-top: 3px solid black;
+          font-size: 2.9em; }
+          #myWorks .work-wrapper .size .info-wrap .info .info-back p a {
+            font-size: 1.2em;
+            width: 245px; } }
 /*-----------Contact--------*/
 #contact {
   background-color: #e4df1e;
@@ -1277,12 +1316,15 @@ h3 {
   padding-bottom: 50px; }
   #contact h2 {
     width: 100%;
-    color: #FF0D66; }
+    color: #FF0D66;
+    margin-bottom: 0; }
   #contact .contact-wrap {
     display: flex;
     flex-wrap: wrap; }
     #contact .contact-wrap .form-wrapper {
       width: 47%; }
+      #contact .contact-wrap .form-wrapper .button {
+        text-align: center; }
 
 form {
   display: flex;
@@ -1377,6 +1419,29 @@ form {
   .icons .phone:hover {
     background-position: top; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #contact .contact-wrap .form-wrapper {
+    width: 100%; }
+    #contact .contact-wrap .form-wrapper form {
+      margin: 0 auto;
+      width: 85%;
+      height: auto; }
+      #contact .contact-wrap .form-wrapper form input {
+        height: 130px;
+        border-radius: 23px;
+        font-size: 4em; }
+      #contact .contact-wrap .form-wrapper form textarea {
+        height: 400px;
+        border-radius: 35px;
+        font-size: 4em; }
+      #contact .contact-wrap .form-wrapper form h4 {
+        font-size: 6em; }
+
+  #contact .contact-wrap .icons {
+    width: 60%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 150px; } }
 footer {
   height: 20px;
   text-align: center;
@@ -1385,5 +1450,10 @@ footer {
   font-size: 22px; }
   footer p {
     margin: 15px; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  footer p {
+    font-size: 2.5em;
+    margin: 0.5em; } }
 
 /*# sourceMappingURL=style.css.map */
