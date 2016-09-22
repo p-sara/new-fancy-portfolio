@@ -119,22 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   questionSix.addEventListener("click", changeImgMb6);
   
-  /*-----------STICKY MENU----------*/
   
-  var menu = $(".navigation");
-  var menuPositionTop = menu.position().top;
-   $(window).on("resize", function(){
-        var windowPositionLeft = $("body").scrollLeft();
-    });
-    
-    $(window).on("resize scroll", function(){
-      var windowPositionTop = $("body").scrollTop();
-      if (menuPositionTop<windowPositionTop){
-          menu.addClass("sticky");
-      }else{
-          menu.removeClass("sticky");
-      }      
-    }); 
   
   /*------------SKILLS----------*/
 
@@ -183,4 +168,32 @@ $('.bar-percentage[data-percentage]').each(function () {
 });
 
     
-   
+   /*-----------STICKY MENU----------*/
+  
+  var menu = $(".menu-window");
+  var menuPositionTop = menu.position().top;
+   $(window).on("resize", function(){
+        var windowPositionLeft = $("body").scrollLeft();
+    });
+    
+    $(window).on("resize scroll", function(){
+      var windowPositionTop = $("body").scrollTop();
+      if (menuPositionTop<windowPositionTop){
+          menu.addClass("sticky");
+      }else{
+          menu.removeClass("sticky");
+      }      
+    }); 
+  
+  
+  /*-----------SLIDING MENU-------------*/
+  //if (window.matchMedia('(max-width: 480px)').matches){
+
+    $(".menu-window").on("swipeleft",function(){
+  $(".navigation").css("left", "-670px");
+  });
+    
+    $(".menu-window").on("swiperight",function(){
+  $(".navigation").css("left", "0px");
+});
+//}

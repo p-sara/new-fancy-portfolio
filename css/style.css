@@ -587,7 +587,7 @@ header {
     left: 1%;
     font-style: italic;
     margin: 30px 0;
-    height: 13.5%;
+    height: 20.5%;
     width: 37%;
     background: url(../img/sarapstro.png);
     background-size: cover;
@@ -598,7 +598,7 @@ header {
   #wrapper h3 {
     position: absolute;
     top: 0;
-    background: url(../img/kliknij.png);
+    background: url(../img/kliknij0.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -710,12 +710,12 @@ header {
     height: 100%;
     width: 135%; }
   #wrapper h1 {
-    width: 98%;
-    height: 9.5%; }
+    width: 87%;
+    height: 12.5%; }
   #wrapper h3 {
-    top: 6%;
-    height: 5.5%;
-    width: 75%; }
+    top: 8%;
+    height: 4%;
+    width: 57%; }
 
   .questionMark {
     height: 8%;
@@ -750,7 +750,7 @@ header {
 
   .creative {
     top: 17%;
-    left: 58%;
+    left: 62%;
     width: 33%; }
 
   .motivated {
@@ -760,17 +760,17 @@ header {
 
   .consistant {
     top: 46%;
-    left: 50%;
+    left: 65%;
     width: 36%; }
 
   .self-reliant {
-    top: 83%;
+    top: 86%;
     left: 69%;
     width: 31%; }
 
   .responsible {
     top: 73%;
-    left: 39%;
+    left: 55%;
     width: 42%; }
 
   .disciplined {
@@ -863,36 +863,38 @@ header {
     height: 15%;
     width: 32%; } }
 /*----Nav bar-----*/
-.navigation {
+.menu-window {
   position: relative;
   top: -25px;
-  display: flex;
-  justify-content: space-around;
   height: 40px;
   width: 100%;
   background: #fff;
   margin: 0;
   padding: 0;
   list-style-type: none; }
-  .navigation a {
-    flex: 1 1 100%;
-    flex-direction: row;
-    text-align: center;
-    padding: 12px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 18px;
-    align-self: center;
-    color: #000; }
-  .navigation a:first-child:hover,
-  .navigation a:nth-child(5):hover {
-    color: #f4ca00; }
-  .navigation a:nth-child(2):hover,
-  .navigation a:nth-child(4):hover {
-    color: #43d6a0; }
-  .navigation a:nth-child(3):hover {
-    color: #ff1182; }
+  .menu-window .navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; }
+    .menu-window .navigation a {
+      flex: 1 1 100%;
+      flex-direction: row;
+      text-align: center;
+      padding: 8px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 18px;
+      align-self: center;
+      color: #000; }
+    .menu-window .navigation a:first-child:hover,
+    .menu-window .navigation a:nth-child(5):hover {
+      color: #f4ca00; }
+    .menu-window .navigation a:nth-child(2):hover,
+    .menu-window .navigation a:nth-child(4):hover {
+      color: #43d6a0; }
+    .menu-window .navigation a:nth-child(3):hover {
+      color: #ff1182; }
 
 .sticky {
   position: fixed;
@@ -906,6 +908,23 @@ header {
 .sticky:hover {
   background: white; }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .menu-window {
+    width: 100%;
+    height: 125px;
+    background: #fff;
+    overflow: hidden; }
+    .menu-window .navigation {
+      background: transparent;
+      position: relative;
+      width: 1700px;
+      height: 125px;
+      transition: 1s ease; }
+      .menu-window .navigation a {
+        height: auto;
+        font-size: 60px;
+        font-weight: 900;
+        padding: 12px 0; } }
 /*----------Slider----------*/
 #myStory {
   margin-top: 100px;
@@ -916,6 +935,11 @@ header {
   #myStory h2 {
     color: #ff1182;
     padding-top: 35px; }
+  #myStory .slider-wrapper .bb-bookblock {
+    width: 960px;
+    height: 560px; }
+  #myStory .slider-wrapper a {
+    display: none; }
 
 /*---------About me section---------*/
 #aboutMe {
@@ -955,12 +979,12 @@ header {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
   #aboutMe {
-    height: 130vh; }
+    height: 138vh; }
     #aboutMe .background {
-      height: 131vh; }
+      height: 137vh; }
       #aboutMe .background .background-wrapper {
         top: 2vh;
-        height: 127vh; }
+        height: 134vh; }
         #aboutMe .background .background-wrapper p {
           font-size: 58px; } }
 /*-----Skills section------*/
@@ -1301,14 +1325,26 @@ header {
         width: 690px; }
         #myWorks .work-wrapper .size .info-wrap .info .info-back h3 {
           font-size: 4em;
-          margin: 115px 0; }
+          margin: 130px 0; }
         #myWorks .work-wrapper .size .info-wrap .info .info-back p {
           width: 510px;
           border-top: 3px solid black;
           font-size: 2.9em; }
           #myWorks .work-wrapper .size .info-wrap .info .info-back p a {
             font-size: 1.2em;
-            width: 245px; } }
+            width: 245px; }
+  #myWorks .work-wrapper .oldPortfolio {
+    background: url("../img/oldportfoliomob.jpg"); }
+  #myWorks .work-wrapper .bicycle {
+    background: url("../img/bikemob.jpg"); }
+  #myWorks .work-wrapper .bhagaskara {
+    background: url("../img/bhagaskaramob.png"); }
+  #myWorks .work-wrapper .shoppingList {
+    background: url("../img/shoppinglistmob.jpg"); }
+  #myWorks .work-wrapper .email {
+    background: url("../img/emailmob.jpg"); }
+  #myWorks .work-wrapper .sitOnChair {
+    background: url("../img/sitOnChairmob.jpg"); } }
 /*-----------Contact--------*/
 #contact {
   background-color: #e4df1e;
@@ -1441,7 +1477,25 @@ form {
     width: 60%;
     height: 300px;
     margin: 0 auto;
-    margin-top: 150px; } }
+    margin-top: 150px; }
+    #contact .contact-wrap .icons .phone-number {
+      top: 60px;
+      left: 427px;
+      border-radius: 35px;
+      height: 82px;
+      width: 260px;
+      font-size: 57px;
+      padding: 15px 20px; }
+    #contact .contact-wrap .icons .phone:hover:after {
+      width: 40px;
+      height: 40px;
+      right: -62px;
+      top: 174px;
+      box-shadow: none;
+      -webkit-transform: rotate(225deg);
+      -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      -o-transform: rotate(225deg); } }
 footer {
   height: 20px;
   text-align: center;
