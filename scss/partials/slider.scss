@@ -13,19 +13,73 @@
   background-size: cover;
   height:500px;
   width:812px;
+  & .uni {
+        background-image: url("img/page1.png");
+        z-index:9999;
+      }
   & img {
     position: relative;
     top: 24px;
-    left: -8px;
+    left: 38px;
   }
 }
 
 .slider-wrapper {
   & a, .bb-bookblock {
   display:inline-block;
-    vertical-align: middle;
+  vertical-align: middle;
   }
+  & .displayMobile {
+    display:none;
+  }
+  &  .displayFull {
+        display:block;
+    }
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .slider-wrapper {
+    & .bb-bookblock {
+      width:920px;
+      height:550px;
+       & img {
+    left: 52px;
+  }
+      & .displayFull {
+        display:none;
+      }
+      & .displayMobile {
+        display:block;
+      }
+    }
+    
+     & a {
+      display:none;
+    }
+}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .slider-wrapper {
+    & .bb-bookblock {
+      width:845px;
+      height:495px;
+       & img {
+    left: 57px;
+         top:15px;
+  }
+      & .displayFull {
+        display:none;
+      }
+      & .displayMobile {
+        display:block;
+         height:445px;
+      }
+    }
+    
+     & a {
+      //display:none;
+    }
+}
+    }
 
 .bb-page {
 	position: absolute;
@@ -183,7 +237,7 @@
 	position: absolute;
 	top: 0;
 	left: 0px;
-	display: none;
+    //display:none;
 }
 
 /* No JS */
