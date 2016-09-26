@@ -55,7 +55,7 @@ h3 {
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  height:9%;
+  height:9.2%;
   width:33%;
   right: 2%;
   margin: 75px 0;
@@ -260,6 +260,9 @@ h3 {
 }
 /*---------TABLET VERSION----------*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h2 {
+    font-size:90px;
+  }
   #wrapper .myFace {
     display: none;
   }
@@ -268,22 +271,22 @@ h3 {
     height: 100vh;
     width: 100%;
   }
-  h1 {
+  #wrapper h1 {
     top: 0;
     right: 1%;
-    width: 600px;
-    font-size: 5.5em;
+    height:12.5%;
+    width: 66%;
     margin: 30px 0;
   }
-  h3 {
+  #wrapper h3 {
     top: 7%;
-    right: 0;
-    font-size: 3em;
-    width: 460px;
+    right: 2%;
+    width: 60%;
+    height: 5.6%;
   }
   .questionMark {
-    height: 11%;
-    width: 5.2%;
+    height: 7.2%;
+    width: 3.5%;
   }
   .one {
     top: 20%;
@@ -421,6 +424,16 @@ background:transparent;
     }
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .menu-window {
+    height:55px;
+    background-color:white;
+  & .navigation a {
+    font-size:30px;
+    font-weight:600;
+  }
+}
+}
 
 /*----------Slider----------*/
 
@@ -496,6 +509,18 @@ background:transparent;
     }
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #aboutMe .background {
+    height:900px;
+    & .background-wrapper {
+      height: 870px;
+      & p {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
 /*-----Skills section------*/
 
 #mySkills {
@@ -702,33 +727,31 @@ background:transparent;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #my_skills,
-  .skill-wrapper {
-    height: 2800px;
-  }
+ 
   #mySkills .skill-wrapper h4 {
     font-size: 35px;
+    width:325px;
   }
   .bar-main-container {
-    height: 85px;
+    height: 55px;
     width: 370px;
   }
   .skill-wrapper {
     width: 100%;
-    height: 820px;
+    height: 700px;
   }
   .skill-wrapper #container {
     width: 490px;
     margin: 0;
   }
   .bar-container {
-    height: 30px;
-    margin: 20px 0;
+    height: 15px;
+    margin: 13px 0;
   }
   .bar-percentage {
-    height: 15px;
-    margin: 6px 0px;
-    font-size: 35px;
+    height: 30px;
+    margin: 3px 0px;
+    font-size: 23px;
   }
 }
 
@@ -946,6 +969,20 @@ background:transparent;
 }
 
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  
+#myWorks .work-wrapper .size .info-wrap .info .info-back p {
+    width:217px;
+    margin-top:-12px;
+    padding: 7px 0;
+    font-size:20px;
+    font-weight:700;
+    
+  }
+ #myWorks .work-wrapper .size .info-wrap .info .info-back h3 {
+    margin: 32px 0;
+  }
+}
 
 
 /*-----------Contact--------*/
@@ -1120,6 +1157,11 @@ form {
       & h4 {
         font-size: 6em;
       }
+      .button {
+        font-size: 68px;
+        width:200px;
+        height: 120px;
+      }
     }
   }
   #contact .contact-wrap .icons {
@@ -1151,6 +1193,51 @@ form {
   
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #contact .contact-wrap .form-wrapper h3 {
+    font-size:50px;
+  }
+  #contact .contact-wrap .form-wrapper form {
+    width:80%;
+    height: 750px;
+    
+    & input {
+      height:60px;
+      font-size: 30px;
+    }
+    & textarea {
+      font-size:30px;
+    }
+    & .button {
+      height: 60px;
+      width:130px;
+      font-size:25px;
+    }
+}
+  #contact .contact-wrap .icons {
+    width:33%;
+    margin-left:11%;
+    & .phone-number {
+      top:30px;
+      left:155px;
+      font-size:35px;
+      width: 165px;
+      height:40px;
+    }
+    & .phone:hover:after {
+      height:20px;
+      width:20px;
+      box-shadow: none;
+      right: -87px;
+      top:152px;
+      -webkit-transform: rotate(225deg);
+    -moz-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    -o-transform: rotate(225deg);
+    }
+  }
+}
+
 
 footer {
   height:20px;
@@ -1167,4 +1254,11 @@ footer {
     font-size:2.5em;
     margin:0.5em;
   }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  footer {
+    font-size:30px;
+    margin:10px;
+  }
+  
 }
