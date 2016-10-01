@@ -416,12 +416,9 @@ textarea {
     top: 24px;
     left: 38px; }
 
-.slider-wrapper a, .slider-wrapper .bb-bookblock {
-  display: inline-block;
-  vertical-align: middle; }
-.slider-wrapper .displayMobile {
+.bb-custom-wrapper .slider-wrapper .displayMobile {
   display: none; }
-.slider-wrapper .displayFull {
+.bb-custom-wrapper .slider-wrapper .displayFull {
   display: block; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -434,8 +431,8 @@ textarea {
       display: none; }
     .slider-wrapper .bb-bookblock .displayMobile {
       display: block; }
-  .slider-wrapper a {
-    display: none; } }
+  .slider-wrapper img {
+    height: 80px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .slider-wrapper .bb-bookblock {
     width: 845px;
@@ -601,7 +598,8 @@ h2 {
   font-size: 68px;
   font-weight: 800;
   text-align: center;
-  padding-top: 40px; }
+  padding-top: 40px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5); }
 
 header {
   margin: 0; }
@@ -628,7 +626,7 @@ header {
   #wrapper h3 {
     position: absolute;
     top: 0;
-    background: url(../img/kliknij0.png);
+    background: url(../img/kliknij.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -960,11 +958,10 @@ header {
         padding: 12px 0; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .menu-window {
-    height: 55px;
+    height: 45px;
     background-color: white; }
     .menu-window .navigation a {
-      font-size: 30px;
-      font-weight: 600; } }
+      font-size: 24px; } }
 /*----------Slider----------*/
 #myStory {
   margin-top: 100px;
@@ -981,54 +978,29 @@ header {
   background-color: #43d6a0;
   color: white;
   padding-bottom: 180px; }
-  #aboutMe .background {
-    height: 510px;
-    width: 725px;
-    background-image: url("../img/blue.png");
-    background-size: cover;
-    margin: 0 auto;
-    margin-top: 40px;
-    position: relative;
-    top: 80px;
-    border-radius: 30px; }
-    #aboutMe .background .background-wrapper {
-      height: 480px;
-      width: 695px;
-      position: relative;
-      top: 15px;
-      left: 15px;
-      background-color: #43d6a0;
-      border-radius: 30px; }
-      #aboutMe .background .background-wrapper h2 {
-        color: white;
-        color: #ffdf3c;
-        margin-bottom: 0px;
-        padding-top: 25px; }
-      #aboutMe .background .background-wrapper p {
-        font-size: 24px;
-        width: 550px;
-        margin: 0 auto;
-        text-align: center;
-        color: white;
-        font-weight: 500; }
+  #aboutMe .background-wrapper {
+    background-color: #43d6a0; }
+    #aboutMe .background-wrapper h2 {
+      color: #ffdf3c;
+      margin-bottom: 0px;
+      padding-top: 100px; }
+    #aboutMe .background-wrapper p {
+      font-size: 24px;
+      width: 550px;
+      margin: 0 auto;
+      text-align: center;
+      color: white;
+      font-weight: 500;
+      padding: 5px;
+      letter-spacing: 0.5px; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
-  #aboutMe {
-    height: 138vh; }
-    #aboutMe .background {
-      height: 137vh; }
-      #aboutMe .background .background-wrapper {
-        top: 2vh;
-        height: 134vh; }
-        #aboutMe .background .background-wrapper p {
-          font-size: 58px; } }
+  #aboutMe .background-wrapper p {
+    font-size: 58px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #aboutMe .background {
-    height: 900px; }
-    #aboutMe .background .background-wrapper {
-      height: 870px; }
-      #aboutMe .background .background-wrapper p {
-        font-size: 35px; } }
+  #aboutMe .background-wrapper p {
+    font-size: 25px;
+    padding-bottom: 50px; } }
 /*-----Skills section------*/
 #mySkills {
   padding-top: 80px;
@@ -1206,29 +1178,29 @@ header {
     font-size: 40px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #mySkills .skill-wrapper h4 {
-    font-size: 35px;
+    font-size: 27px;
     width: 325px; }
 
   .bar-main-container {
-    height: 55px;
-    width: 370px; }
+    height: 45px;
+    width: 345px; }
 
   .skill-wrapper {
     width: 100%;
-    height: 700px; }
+    height: 545px; }
 
   .skill-wrapper #container {
     width: 490px;
     margin: 0; }
 
   .bar-container {
-    height: 15px;
-    margin: 13px 0; }
+    height: 11px;
+    margin: 10px 0; }
 
   .bar-percentage {
-    height: 30px;
-    margin: 3px 0px;
-    font-size: 23px; } }
+    height: 26px;
+    margin: 0;
+    font-size: 18px; } }
 @media (max-width: 750px) {
   .skill-wrapper {
     width: 50%;
@@ -1349,7 +1321,7 @@ header {
     #myWorks .work-wrapper .email {
       background: url("../img/email.jpg"); }
     #myWorks .work-wrapper .sitOnChair {
-      background: url("../img/sitOnChair.jpg"); }
+      background: url("../img/sitonchair.jpg"); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
   #myWorks .work-wrapper .size {
@@ -1383,7 +1355,7 @@ header {
   #myWorks .work-wrapper .email {
     background: url("../img/emailmob.jpg"); }
   #myWorks .work-wrapper .sitOnChair {
-    background: url("../img/sitOnChairmob.jpg"); } }
+    background: url("../img/sitonchairmob.jpg"); } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #myWorks .work-wrapper .size .info-wrap .info .info-back p {
     width: 217px;
@@ -1616,7 +1588,7 @@ footer {
     margin: 0.5em; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   footer {
-    font-size: 30px;
+    font-size: 23px;
     margin: 10px; } }
 
 /*# sourceMappingURL=style.css.map */

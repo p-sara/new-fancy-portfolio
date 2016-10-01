@@ -24,11 +24,7 @@
   }
 }
 
-.slider-wrapper {
-  & a, .bb-bookblock {
-  display:inline-block;
-  vertical-align: middle;
-  }
+.bb-custom-wrapper .slider-wrapper {
   & .displayMobile {
     display:none;
   }
@@ -51,10 +47,9 @@
         display:block;
       }
     }
-    
-     & a {
-      display:none;
-    }
+     img {
+        height: 80px;
+      }
 }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -73,10 +68,6 @@
         display:block;
          height:445px;
       }
-    }
-    
-     & a {
-      //display:none;
     }
 }
     }

@@ -90,32 +90,32 @@ document.addEventListener("DOMContentLoaded", function() {
   
   /*----Mobile version----*/
   function changeImgMb1 () {
-   myPhotoMb.setAttribute("src", "img/meRes2.jpg"); 
+   myPhotoMb.setAttribute("src", "img/meres2.jpg"); 
   }
   questionOne.addEventListener("click", changeImgMb1);
   
   function changeImgMb2 () {
-   myPhotoMb.setAttribute("src", "img/meRes3.jpg"); 
+   myPhotoMb.setAttribute("src", "img/meres3.jpg"); 
   }
   questionTwo.addEventListener("click", changeImgMb2);
   
   function changeImgMb3 () {
-   myPhotoMb.setAttribute("src", "img/meRes4.jpg"); 
+   myPhotoMb.setAttribute("src", "img/meres4.jpg"); 
   }
   questionThree.addEventListener("click", changeImgMb3);
   
   function changeImgMb4 () {
-   myPhotoMb.setAttribute("src", "img/meRes5.jpg"); 
+   myPhotoMb.setAttribute("src", "img/meres5.jpg"); 
   }
   questionFour.addEventListener("click", changeImgMb4);
   
   function changeImgMb5 () {
-   myPhotoMb.setAttribute("src", "img/meRes6.jpg"); 
+   myPhotoMb.setAttribute("src", "img/meres6.jpg"); 
   }
   questionFive.addEventListener("click", changeImgMb5);
   
   function changeImgMb6 () {
-   myPhotoMb.setAttribute("src", "img/meRes7.jpg"); 
+   myPhotoMb.setAttribute("src", "img/meres7.jpg"); 
   }
   questionSix.addEventListener("click", changeImgMb6);
   
