@@ -165,7 +165,7 @@ $('.bar-percentage[data-percentage]').each(function () {
      $($(this)).next(".phone-number").css("display", "none");
    });
   
-});
+
 
     
    /*-----------STICKY MENU----------*/
@@ -189,11 +189,30 @@ $('.bar-percentage[data-percentage]').each(function () {
   /*-----------SLIDING MENU-------------*/
   //if (window.matchMedia('(max-width: 480px)').matches){
 
-    $(".menu-window").on("swipeleft",function(){
-  $(".navigation").css("left", "-670px");
+    $(".burger-menu").on("click",function(){
+  $(".menu-window").toggleClass("long-menu");
   });
-    
-    $(".menu-window").on("swiperight",function(){
-  $(".navigation").css("left", "0px");
-});
+  
+  $(".navigation a").on("click",function(){
+    $(".menu-window").removeClass("long-menu");
+  });
+  
+
 //}
+  
+  /*----------Responsive nav-------------*/
+  
+  $(window).on("resize", function() {
+        if (window.matchMedia("max-width: 480px")) {
+           $(".navigation").addClass("hide");
+            menu.removeClass("sticky");
+        }
+    })
+    
+    $(".text").on("click", function () {
+       
+            $("ul").toggleClass("hide");
+            });
+  
+  
+  });

@@ -417,7 +417,8 @@ textarea {
     left: 38px; }
 
 .bb-custom-wrapper .slider-wrapper .displayMobile {
-  display: none; }
+  display: none;
+  height: 500px; }
 .bb-custom-wrapper .slider-wrapper .displayFull {
   display: block; }
 
@@ -430,7 +431,8 @@ textarea {
     .slider-wrapper .bb-bookblock .displayFull {
       display: none; }
     .slider-wrapper .bb-bookblock .displayMobile {
-      display: block; }
+      display: block;
+      width: 815px; }
   .slider-wrapper img {
     height: 80px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -444,7 +446,8 @@ textarea {
       display: none; }
     .slider-wrapper .bb-bookblock .displayMobile {
       display: block;
-      height: 445px; } }
+      height: 445px;
+      width: 740px; } }
 .bb-page {
   position: absolute;
   -webkit-transform-style: preserve-3d;
@@ -903,6 +906,8 @@ header {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+  .menu-window .burger-menu {
+    display: none; }
   .menu-window .navigation {
     display: flex;
     justify-content: space-around;
@@ -939,29 +944,47 @@ header {
 .sticky:hover {
   background: white; }
 
+.hide {
+  display: none; }
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .menu-window {
     width: 100%;
-    height: 125px;
+    height: 127px;
     background: #fff;
-    overflow: hidden; }
+    overflow: hidden;
+    -webkit-transition: ease-out 0.5s;
+    transition: ease-out 0.5s; }
+    .menu-window .burger-menu {
+      display: block;
+      float: right;
+      height: 110px;
+      width: 110px;
+      background-image: url("../img/menu.png");
+      background-repeat: no-repeat;
+      background-position: center; }
     .menu-window .navigation {
       background: transparent;
       position: relative;
-      width: 1700px;
-      height: 125px;
-      transition: 1s ease; }
+      width: 100%;
+      height: 600px;
+      transition: 1s ease;
+      display: flex;
+      flex-direction: column; }
       .menu-window .navigation a {
         height: auto;
         font-size: 60px;
         font-weight: 900;
-        padding: 12px 0; } }
+        padding: 12px 0; }
+
+  .long-menu {
+    height: 725px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .menu-window {
-    height: 45px;
+    height: 55px;
     background-color: white; }
     .menu-window .navigation a {
-      font-size: 24px; } }
+      font-size: 30px; } }
 /*----------Slider----------*/
 #myStory {
   margin-top: 100px;
@@ -995,6 +1018,9 @@ header {
       letter-spacing: 0.5px; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #myStory h2 {
+    padding-top: 120px; }
+
   #aboutMe .background-wrapper p {
     font-size: 58px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -1324,6 +1350,8 @@ header {
       background: url("../img/sitonchair.jpg"); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
+  #myWorks h2 {
+    padding-top: 110px; }
   #myWorks .work-wrapper .size {
     height: 800px;
     width: 800px; }

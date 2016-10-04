@@ -27,6 +27,7 @@
 .bb-custom-wrapper .slider-wrapper {
   & .displayMobile {
     display:none;
+    height: 500px;
   }
   &  .displayFull {
         display:block;
@@ -45,6 +46,7 @@
       }
       & .displayMobile {
         display:block;
+        width:815px;
       }
     }
      img {
@@ -67,6 +69,7 @@
       & .displayMobile {
         display:block;
          height:445px;
+        width:740px;
       }
     }
 }
