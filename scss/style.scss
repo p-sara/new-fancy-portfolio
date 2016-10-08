@@ -88,6 +88,7 @@ h3 {
   background-repeat: no-repeat;
   z-index: 2;
   position: absolute;
+  cursor: pointer;
 }
 
 .creative {
@@ -365,11 +366,24 @@ h3 {
     display:none;
   }
   & .navigation {
-    display: flex;
-  justify-content: space-around;
+    display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+     -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
     width: 100%;
   & a {
+    -webkit-flex: 1 1 100%;
+    -moz-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
     flex: 1 1 100%;
+    -webkit-flex-direction: row;
+    -ms--moz-flex-direction: row;
+    flex-direction: row;
     flex-direction: row;
     text-align: center;
     padding: 8px 0;
@@ -432,7 +446,11 @@ background:transparent;
     width:100%;
     height:600px;
       transition: 1s ease;
-      display:flex;
+      display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
       flex-direction:column;
       & a {
         height:auto;
@@ -490,7 +508,7 @@ background:transparent;
       }
       & p {
         font-size: 24px;
-        width: 550px;
+        width: 45%;
         margin: 0 auto;
         text-align: center;
         color: white;
@@ -510,6 +528,7 @@ background:transparent;
         
         & p {
           font-size: 58px;
+          width:70%;
         }
       }
     }
@@ -520,6 +539,7 @@ background:transparent;
       & p {
         font-size: 25px;
         padding-bottom: 50px;
+        width:60%;
       }
     }
   }
@@ -528,11 +548,13 @@ background:transparent;
 
 #mySkills {
   padding-top: 80px;
-  display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
   flex-direction: column;
   align-content: center;
   padding: 0;
@@ -560,7 +582,13 @@ background:transparent;
   & .section-header {
     position: relative;
     color: $pinkColor;
+    -webkit-justify-content: center;
+     -moz-justify-content: center;
+    -ms-justify-content: center;
     justify-content: center;
+  -webkit-align-items: center;
+   -moz-align-items: center;
+  -ms-align-items: center;
   align-items: center;
   color: white;
   margin: 0 auto;
@@ -582,13 +610,16 @@ background:transparent;
   width: 750px;
   height: 470px;
   text-align: center;
-  display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   position: relative;
 }
 
@@ -775,10 +806,20 @@ background:transparent;
     padding-top:35px;
   }
   & .work-wrapper {
-    display: flex;
+    display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
     width: 100%;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     position: relative;
+    -webkit-justify-content: space-around;
+     -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
     justify-content: space-around;
     & .size {
       width: 350px;
@@ -1003,7 +1044,14 @@ background:transparent;
     margin-bottom:0;
   }
   & .contact-wrap {
-    display:flex;
+    display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+   -webkit-flex-wrap: wrap;
+   -moz-flex-wrap: wrap;
+   -webkit-flex-wrap: wrap;
    flex-wrap: wrap;
     & .form-wrapper {
     width:47%;
@@ -1032,8 +1080,18 @@ background:transparent;
 }
 
 form {
+  display: -webkit-box; 
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-content: space-around;
+  -moz-align-content: space-around;
+  -ms-align-content: space-around;
   align-content: space-around;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 70%;
   height: 500px;
