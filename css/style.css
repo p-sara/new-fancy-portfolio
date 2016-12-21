@@ -364,6 +364,36 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 68px;
+  text-align: center;
+  padding-top: 40px;
+  letter-spacing: 2px;
+  font-weight: 900; }
+
+#myStory h2 {
+  color: #e4056e;
+  text-shadow: 1px -1px 0 #00b2d9, 2px -2px 0 #00b2d9, 3px -3px 0 #00b2d9, 4px -4px 0 #00b2d9, 5px -5px 0 #ffd217, 6px -6px 0 #ffd217, 7px -7px 0 #ffd217, 8px -8px 0 #ffd217;
+  padding-top: 35px; }
+
+#aboutMe .background-wrapper h2 {
+  color: #ffd217;
+  padding-top: 100px;
+  text-shadow: 1px -1px 0 #ec88ae, 2px -2px 0 #ec88ae, 3px -3px 0 #ec88ae, 4px -4px 0 #ec88ae, 5px -5px 0 #46ce71, 6px -6px 0 #46ce71, 7px -7px 0 #46ce71, 8px -8px 0 #46ce71; }
+
+#mySkills h2 {
+  color: #000;
+  text-shadow: 1px -1px 0 #f57164, 2px -2px 0 #f57164, 3px -3px 0 #f57164, 4px -4px 0 #f57164, 5px -5px 0 #ceb237, 6px -6px 0 #ceb237, 7px -7px 0 #ceb237, 8px -8px 0 #ceb237; }
+
+#myWorks h2 {
+  color: #e02e2e;
+  text-shadow: 1px -1px 0 #ffd217, 2px -2px 0 #ffd217, 3px -3px 0 #ffd217, 4px -4px 0 #ffd217, 5px -5px 0 #bf77cc, 6px -6px 0 #bf77cc, 7px -7px 0 #bf77cc, 8px -8px 0 #bf77cc; }
+
+#contact h2 {
+  color: #37a559;
+  text-shadow: 1px -1px 0 #920938, 2px -2px 0 #920938, 3px -3px 0 #920938, 4px -4px 0 #920938, 5px -5px 0 #a8f213, 6px -6px 0 #a8f213, 7px -7px 0 #a8f213, 8px -8px 0 #a8f213; }
+
 @font-face {
   font-family: 'sacramentoregular';
   src: url("../fonts/sacramento/sacramento-regular-webfont.eot");
@@ -388,13 +418,12 @@ textarea {
   src: url("../fonts/opensans/light/opensans-condlight-webfont.eot?#iefix") format("../fonts/opensans/light/embedded-opentype"), url("../fonts/opensans/light/opensans-condlight-webfont.woff2") format("woff2"), url("../fonts/opensans/light/opensans-condlight-webfont.woff") format("woff"), url("../fonts/opensans/light/opensans-condlight-webfont.ttf") format("truetype"), url("../fonts/opensans/light/opensans-condlight-webfont.svg#open_sanscondensed_light") format("svg");
   font-weight: normal;
   font-style: normal; }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  #wrapper .myFace {
-    display: none; }
-
-  #wrapper .myFaceMobile {
-    display: block;
-    height: 140em; } }
+@font-face {
+  font-family: 'lobster_1.4regular';
+  src: url("../fonts/lobster/lobster_1.4-webfont.eot");
+  src: url("../fonts/lobster/lobster_1.4-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lobster/lobster_1.4-webfont.woff2") format("woff2"), url("../fonts/lobster/lobster_1.4-webfont.woff") format("woff"), url("../fonts/lobster/lobster_1.4-webfont.ttf") format("truetype"), url("../fonts/lobster/lobster_1.4-webfont.svg#lobster_1.4regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .bb-bookblock {
   margin: 0 auto;
   position: relative;
@@ -591,19 +620,6 @@ textarea {
 body {
   font-family: 'open_sanscondensed_light'; }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'sacramentoregular'; }
-
-h2 {
-  font-size: 68px;
-  font-weight: 800;
-  text-align: center;
-  padding-top: 40px;
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5); }
-
 header {
   margin: 0; }
 
@@ -636,7 +652,7 @@ header {
     height: 9.2%;
     width: 33%;
     right: 2%;
-    margin: 75px 0; }
+    margin: 60px 0; }
 
 .myFaceMobile {
   display: none; }
@@ -663,53 +679,53 @@ header {
   cursor: pointer; }
 
 .creative {
-  left: 20%;
-  top: 21%;
-  width: 13%;
-  background-image: url("../img/kreatywna.png"); }
-
-.motivated {
   top: 40%;
   left: 7%;
-  width: 13.5%;
-  background-image: url("../img/zmotywowana.png"); }
+  width: 13%;
+  background-image: url("../img/kreatywna1.png"); }
 
-.consistant {
+.motivated {
   top: 65%;
   left: 23%;
   width: 13.5%;
-  background-image: url("../img/konsekwentna.png"); }
+  background-image: url("../img/zmotywowana1.png"); }
+
+.consistant {
+  left: 20%;
+  top: 21%;
+  width: 13.5%;
+  background-image: url("../img/konsekwentna1.png"); }
 
 .self-reliant {
   top: 22%;
   left: 69%;
   width: 13%;
-  background-image: url("../img/samodzielna.png"); }
+  background-image: url("../img/samodzielna1.png"); }
 
 .responsible {
   top: 46%;
   left: 83%;
   width: 15%;
-  background-image: url("../img/odpowiedzialna.png"); }
+  background-image: url("../img/odpowiedzialna1.png"); }
 
 .disciplined {
   top: 70%;
   left: 71%;
   height: 21%;
   width: 16%;
-  background-image: url("../img/zdyscyplinowana.png"); }
+  background-image: url("../img/zdyscyplinowana1.png"); }
 
 .one {
-  left: 24%;
-  top: 25%; }
-
-.two {
   top: 40%;
   left: 7%; }
 
-.three {
+.two {
   top: 65%;
   left: 26%; }
+
+.three {
+  left: 24%;
+  top: 25%; }
 
 .four {
   top: 30%;
@@ -942,7 +958,7 @@ header {
       color: #f4ca00; }
     .menu-window .navigation a:nth-child(2):hover,
     .menu-window .navigation a:nth-child(4):hover {
-      color: #43d6a0; }
+      color: #00b2d9; }
     .menu-window .navigation a:nth-child(3):hover {
       color: #ff1182; }
 
@@ -1007,24 +1023,17 @@ header {
 #myStory {
   margin-top: 100px;
   background-color: #fff;
-  color: #ffdf3c;
+  color: #ffd217;
   text-align: center;
   padding-bottom: 70px; }
-  #myStory h2 {
-    color: #ff1182;
-    padding-top: 35px; }
 
 /*---------About me section---------*/
 #aboutMe {
-  background-color: #43d6a0;
+  background-color: #7296d8;
   color: white;
   padding-bottom: 180px; }
   #aboutMe .background-wrapper {
-    background-color: #43d6a0; }
-    #aboutMe .background-wrapper h2 {
-      color: #ffdf3c;
-      margin-bottom: 0px;
-      padding-top: 100px; }
+    background-color: #7296d8; }
     #aboutMe .background-wrapper p {
       font-size: 24px;
       width: 45%;
@@ -1071,13 +1080,13 @@ header {
   text-transform: uppercase; }
 
 .wrap-it {
-  background: url("../img/londonpink.jpg") repeat;
-  background-color: #030303;
+  background: url("../img/triangles.png") repeat;
+  background-color: #fff;
   min-height: 100%;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   padding-bottom: 123px; }
   .wrap-it .section-header {
     position: relative;
@@ -1092,15 +1101,7 @@ header {
     align-items: center;
     color: white;
     margin: 0 auto; }
-    .wrap-it .section-header h2 {
-      color: black; }
 
-/*.section-header {
-  font-size: 10px;
-  align-items: center;
-  color: white;
-  margin: 0 auto;
-}*/
 .skill-wrapper {
   margin: 0 auto;
   width: 750px;
@@ -1198,15 +1199,9 @@ header {
   width: 90%; }
 
 /* COLORS */
-.colorOne {
-  background: #ff1182; }
-
-.colorTwo {
+.barColor {
   background: #100e15;
   background: white; }
-
-.colorThree {
-  background: #43d6a0; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
   #my_skills,
@@ -1265,9 +1260,6 @@ header {
 /*-----------My works--------*/
 #myWorks {
   margin-bottom: 150px; }
-  #myWorks h2 {
-    color: #43d6a0;
-    padding-top: 35px; }
   #myWorks .work-wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -1437,13 +1429,9 @@ header {
     margin: 32px 0; } }
 /*-----------Contact--------*/
 #contact {
-  background-color: #e4df1e;
+  background-color: #a56589;
   padding-top: 5px;
   padding-bottom: 50px; }
-  #contact h2 {
-    width: 100%;
-    color: #FF0D66;
-    margin-bottom: 0; }
   #contact .contact-wrap {
     display: -webkit-box;
     display: -moz-box;
@@ -1509,7 +1497,7 @@ form {
     height: 40px;
     border-radius: 5px; }
   form h4 {
-    font-size: 45px;
+    font-size: 40px;
     color: white;
     margin: 20px 0; }
 
@@ -1535,7 +1523,7 @@ form {
     background-position: top; }
   .icons .linkedin {
     background-image: url("../img/linkedin.png");
-    height: 130px;
+    height: 128px;
     width: 150px; }
   .icons .linkedin:hover {
     background-position: top; }
@@ -1554,7 +1542,7 @@ form {
     height: 25px;
     width: 100px;
     font-size: 19px;
-    padding: 10px 20px;
+    padding: 9px 20px;
     letter-spacing: 2px;
     box-shadow: -1px 5px 5px rgba(0, 0, 0, 0.5);
     display: none; }
@@ -1660,13 +1648,19 @@ form {
       -ms-transform: rotate(225deg);
       -o-transform: rotate(225deg); } }
 footer {
-  height: 20px;
+  height: 70px;
   text-align: center;
-  color: #ff1182;
+  color: #000;
   font-weight: 700;
-  font-size: 22px; }
+  font-size: 22px;
+  background-image: url("../img/footer.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: #a56589; }
   footer p {
-    margin: 15px; }
+    padding-bottom: 10px;
+    margin-top: 0; }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
   footer p {

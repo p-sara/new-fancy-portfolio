@@ -1,0 +1,30 @@
+h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 68px;
+  text-align: center;
+  padding-top: 40px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+#myStory h2 {
+  color:#e4056e;
+  text-shadow:1px -1px 0 $storyColor1, 2px -2px 0 $storyColor1, 3px -3px 0 $storyColor1, 4px -4px 0 $storyColor1, 5px -5px 0 $yellowColor, 6px -6px 0 $yellowColor, 7px -7px 0 $yellowColor, 8px -8px 0 $yellowColor;
+  padding-top:35px;
+}
+#aboutMe .background-wrapper h2 {
+  color:$yellowColor;
+  padding-top:100px;
+  text-shadow:1px -1px 0 $aboutColor1, 2px -2px 0 $aboutColor1, 3px -3px 0 $aboutColor1, 4px -4px 0 $aboutColor1, 5px -5px 0 $aboutColor2, 6px -6px 0 $aboutColor2, 7px -7px 0 $aboutColor2, 8px -8px 0 $aboutColor2;
+}
+#mySkills h2 {
+  color:#000;
+  text-shadow:1px -1px 0 $skillsColor1, 2px -2px 0 $skillsColor1, 3px -3px 0 $skillsColor1, 4px -4px 0 $skillsColor1, 5px -5px 0 $skillsColor2, 6px -6px 0 $skillsColor2, 7px -7px 0 $skillsColor2, 8px -8px 0 $skillsColor2;
+}
+#myWorks h2 {
+  color: $redColor;
+  text-shadow:1px -1px 0 $yellowColor, 2px -2px 0 $yellowColor, 3px -3px 0 $yellowColor, 4px -4px 0 $yellowColor, 5px -5px 0 $worksColor2, 6px -6px 0 $worksColor2, 7px -7px 0 $worksColor2, 8px -8px 0 $worksColor2;
+}
+#contact h2 {
+  color:#37a559;
+  text-shadow:1px -1px 0 $worksColor1, 2px -2px 0 $worksColor1, 3px -3px 0 $worksColor1, 4px -4px 0 $worksColor1, 5px -5px 0 $contactColor, 6px -6px 0 $contactColor, 7px -7px 0 $contactColor, 8px -8px 0 $contactColor;
+}

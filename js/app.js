@@ -138,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (pageYOffset < skillsPositionTop - 20 && pageYOffset > skillsPositionTop - 80) {
 
       $('.bar-percentage[data-percentage]').each(function () {
+        console.log($(this));
         var progress = $(this);
         var percentage = Math.ceil($(this).attr('data-percentage'));
         $({
@@ -148,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
           duration: 2000,
           easing: 'linear',
           step: function () {
-            // What todo on every count
+            // What to do on every count
             var pct = Math.floor(this.countNum) + '%';
             progress.text(pct) && progress.siblings().children().css('width', pct);
           }
