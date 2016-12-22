@@ -120,25 +120,40 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   questionSix.addEventListener("click", changeImgMb6);
 
+ /*-----------STICKY MENU----------*/
+
+  var menu = $(".menu-window");
+  var menuPositionTop = menu.position().top;
+  
+  $(window).on("resize", function () {
+    var windowPositionLeft = $("body").scrollLeft();
+  });
+
+  $(window).on("resize scroll", function () {
+    var windowPositionTop = $("body").scrollTop();
+    if (menuPositionTop < windowPositionTop) {
+      menu.addClass("sticky");
+    } else {
+      menu.removeClass("sticky");
+    }
+  });
 
 
   /*------------SKILLS----------*/
 
   var skills = $('.section-header');
   var skillsPositionTop = skills.position().top;
+  
   $(window).on("resize", function () {
     var windowPositionLeft = $("body").scrollLeft();
   });
 
-
-  $(window).on("resize scroll", function () {
-    /*var scrollBottom = $(window).scrollTop() + $(window).height();
-    var windowPositionBottom = $(window).scrollTop() + $(window).height();
-    var windowPositionTop = $("body").scrollTop();*/
+ var switcher = true;
+  
+  $(document).on("resize scroll", function () {
     if (pageYOffset < skillsPositionTop - 20 && pageYOffset > skillsPositionTop - 80) {
 
       $('.bar-percentage[data-percentage]').each(function () {
-        console.log($(this));
         var progress = $(this);
         var percentage = Math.ceil($(this).attr('data-percentage'));
         $({
@@ -156,10 +171,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
       });
-      $(window).off("resize scroll");
+  
+      $(document).off("resize scroll");
     }
   });
-
 
 
   //show phone number 
@@ -174,26 +189,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  /*-----------STICKY MENU----------*/
-
-  var menu = $(".menu-window");
-  var menuPositionTop = menu.position().top;
-  $(window).on("resize", function () {
-    var windowPositionLeft = $("body").scrollLeft();
-  });
-
-  $(window).on("resize scroll", function () {
-    var windowPositionTop = $("body").scrollTop();
-    if (menuPositionTop < windowPositionTop) {
-      menu.addClass("sticky");
-    } else {
-      menu.removeClass("sticky");
-    }
-  });
-
-
   /*-----------SLIDING MENU-------------*/
-  //if (window.matchMedia('(max-width: 480px)').matches){
+
 
   $(".burger-menu").on("click", function () {
     $(".menu-window").toggleClass("long-menu");

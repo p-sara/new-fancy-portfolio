@@ -953,14 +953,16 @@ header {
       font-size: 18px;
       align-self: center;
       color: #000; }
-    .menu-window .navigation a:first-child:hover,
-    .menu-window .navigation a:nth-child(5):hover {
-      color: #f4ca00; }
-    .menu-window .navigation a:nth-child(2):hover,
-    .menu-window .navigation a:nth-child(4):hover {
+    .menu-window .navigation a:first-child:hover {
+      color: #ff1182; }
+    .menu-window .navigation a:nth-child(2):hover {
       color: #00b2d9; }
     .menu-window .navigation a:nth-child(3):hover {
-      color: #ff1182; }
+      color: #ffd217; }
+    .menu-window .navigation a:nth-child(4):hover {
+      color: #e02e2e; }
+    .menu-window .navigation a:nth-child(5):hover {
+      color: #46ce71; }
 
 .sticky {
   position: fixed;
@@ -1566,27 +1568,53 @@ form {
   .icons .phone:hover {
     background-position: top; }
 
+@media only screen and (min-width: 1075px) and (max-width: 1350px) {
+  #contact .icons .phone:hover:after {
+    right: -65px;
+    top: -45px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg); }
+
+  #contact .icons .phone-number {
+    top: -215px;
+    left: 366px; } }
+@media only screen and (min-width: 589px) and (max-width: 784px) {
+  #contact .icons .phone:hover:after {
+    right: -70px;
+    top: -40px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg); }
+
+  #contact .icons .phone-number {
+    top: -210px;
+    left: 130px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
-  #contact .contact-wrap .form-wrapper {
-    width: 100%; }
-    #contact .contact-wrap .form-wrapper form {
-      margin: 0 auto;
-      width: 85%;
-      height: auto; }
-      #contact .contact-wrap .form-wrapper form input {
-        height: 130px;
-        border-radius: 23px;
-        font-size: 4em; }
-      #contact .contact-wrap .form-wrapper form textarea {
-        height: 400px;
-        border-radius: 35px;
-        font-size: 4em; }
-      #contact .contact-wrap .form-wrapper form h4 {
-        font-size: 6em; }
-      #contact .contact-wrap .form-wrapper form .button {
-        font-size: 68px;
-        width: 200px;
-        height: 120px; }
+  #contact {
+    padding-bottom: 40px; }
+    #contact.contact-wrap .form-wrapper {
+      width: 100%; }
+      #contact.contact-wrap .form-wrapper form {
+        margin: 0 auto;
+        width: 85%;
+        height: auto; }
+        #contact.contact-wrap .form-wrapper form input {
+          height: 130px;
+          border-radius: 23px;
+          font-size: 4em; }
+        #contact.contact-wrap .form-wrapper form textarea {
+          height: 400px;
+          border-radius: 35px;
+          font-size: 4em; }
+        #contact.contact-wrap .form-wrapper form h4 {
+          font-size: 6em; }
+        #contact.contact-wrap .form-wrapper form .button {
+          font-size: 68px;
+          width: 200px;
+          height: 120px; }
 
   #contact .contact-wrap .icons {
     width: 60%;
@@ -1665,7 +1693,9 @@ footer {
 @media only screen and (min-device-width: 320px) and (max-device-width: 690px) {
   footer p {
     font-size: 2.5em;
-    margin: 0.5em; } }
+    padding-bottom: 0;
+    position: relative;
+    bottom: 90px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   footer {
     font-size: 23px;
